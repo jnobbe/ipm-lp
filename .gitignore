@@ -1,6 +1,6 @@
 # Directories #
 ###############
-*/.sass-cache/*
+.sass-cache/*
 
 # Packages #
 ############
