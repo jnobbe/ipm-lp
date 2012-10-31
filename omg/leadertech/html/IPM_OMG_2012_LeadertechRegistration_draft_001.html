@@ -1,47 +1,59 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-    
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Seagate</title>
     <style type="text/css">
-    
+
+    td[class="show-column-desktop"] {display:block !important;}
+
 /*Mobile-specific styles */
-		@media only screen and (max-width: 480px) {
-		 
+        @media only screen and (max-device-width: 480px) {
+
             /*Hide*/
             table[class="hide-table"] { display:none !important;}
             tr[class="hide-row"] { display:none !important;}
             td[class="hide-column"] { display:none !important;}
             img[class="hide-image"] { display:none !important;}
             span[class="hide-span"] { display:none !important;}
-            
+
             /*Show*/
-			table[class="show-table"] { display:block !important;}
-			tr[class="show-row"] { display:block !important;}
-			td[class="show-column"] { display:block !important;}
+            table[class="show-table"] { display:block !important;}
+            tr[class="show-row"] { display:block !important;}
+            td[class="show-column"] { display:block !important;}
             img[class="show-image"] { display:block !important;}
-			span[class="show-span"] { display:block !important;}
-            
+            span[class="show-span"] { display:block !important;}
+            td[class="show-column-desktop"] {display:none !important;}
+
             /*Height*/
-			td[class="column-h-00"] { height:0px !important;}
+            td[class="column-h-00"] { height:0px !important;}
             td[class="column-h-01"] { height:1px !important;}
             td[class="column-h-10"] { height:10px !important;}
+            td[class="column-h-15"] { height:15px !important;}
             td[class="column-h-20"] { height:20px !important;}
-			
             td[class="column-h-30"] { height:30px !important;}
-			td[class="column-h-40"] { height:30px !important;}
-			td[class="column-h-50"] { height:30px !important;}
-			td[class="column-h-260"] { height:260px !important;}
-            
+            td[class="column-h-40"] { height:30px !important;}
+            td[class="column-h-50"] { height:30px !important;}
+            td[class="column-h-260"] { height:260px !important;}
+
             /*Width*/
             table[class="table-w-320"] { width:320px !important;}
-			table[class="table-w-240"] { width:240px !important;}
+            table[class="table-w-240"] { width:240px !important;}
+            table[class="table-w-140"] {width:140px !important;}
+            table[class="table-w-120"] {width:120px !important;}
+            table[class="table-w-100"] {width:100px !important;}
+
             td[class="column-w-320"] { width:320px !important;}
+            td[class="column-w-240"] { width:240px !important;}
+            table[class="column-w-140"] {width:140px !important;}
+            td[class="column-w-120"] { width:120px !important;}
+            table[class="column-w-100"] {width:100px !important;}
+
             img[class="image-w-320"] { width:320px !important;}
             td[class="column-w-40"] { width:40px !important; }
-			td[class="mobile-w-gutter"] { width:39px !important; }
+            td[class="mobile-w-gutter"] { width:39px !important; }
             td[class="mobile-w-midgutter"] { width:10px !important; }
             td[class="social-w-columns"] { width:116px !important; }
             table[class="social-w-table"] { width:116px !important; }
@@ -49,97 +61,128 @@
             table[class="gutter-w-20"] { width:20px !important; }
             table[class="gutter-w-30"] { width:30px !important; }
             table[class="footer-w-242"] { width:242px !important; }
-            
+
             /*Resize*/
             span[class="resize-headline"] {font-size:21px !important; }
-            
- 			/*Replace*/ 
+            span[class="font-13"] {font-size:13px !important;}
+
+            /*Replace*/
             td[class="mobile-header"] {
                 background:transparent url('http://img.en25.com/eloquaimages/clients/Seagate/{269c031e-2a88-40e2-82a1-6daa542bbf8f}_mobile-header-sfl.jpg') no-repeat;
                 width: 320px !important;
                 height: 63px !important;
             }
-                td[class="mobile-header"] img { 
-                    display: none !important; 
-                }
-             
+            td[class="mobile-header"] img {
+                display: none !important;
+            }
+
+            td[class="mobile-hero"] {
+                background:transparent url('http://img.en25.com/eloquaimages/clients/Seagate/{cb8c4e1d-fd25-4aeb-89d9-9357b46966cd}_mobile-hero.jpg') no-repeat;
+                width: 320px !important;
+                height: 234px !important;
+            }
+            td[class="mobile-hero"] img {
+                display: none !important;
+            }
+
+            table[class="table-w-249"] {width:249px !important;}
+            td[class="column-w-249"] { width:249px !important;}
+            td[class="column-w-35"] { width:35px !important; }
+            td[class="column-w-36"] { width:36px !important;}
+
          }
-    
+
         /* Client-specific Styles */
         #outlook a {
             padding: 0;
         } /* Force Outlook to provide a "view in browser" button. */
-        
+
         body {
-            width: 100% !important; 
-        } 
-        
-        .ReadMsgBody { 
+            width: 100% !important;
+        }
+
+        .ReadMsgBody {
             width: 100%;
         } /* Force Hotmail to display emails at full width */
-        
+
         .ExternalClass {
             width: 100%;
         } /* Force Hotmail to display emails at full width */
-        
+
         .ExternalClass * {
             line-height: 100%
         } /* Force Hotmail and Outlook.com to respect line-height */
-        
-        
-        body { 
+
+
+        body {
             -webkit-text-size-adjust: none;
-            -ms-text-size-adjust: none; 
+            -ms-text-size-adjust: none;
         } /* Prevent Webkit and Windows Mobile platforms from changing default font sizes. */
 
         /* Reset Styles */
-        body { 
-            margin: 0; 
-            padding: 0; 
+        body {
+            margin: 0;
+            padding: 0;
         }
-        
-        img { 
+
+        img {
             outline: none;
             text-decoration: none;
             border: 0;
             display: block;
         }
-        
+
         #backgroundTable {
-            height: 100% !important; 
-            margin: 0; 
-            padding: 0; 
-            width: 100% !important; 
+            height: 100% !important;
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
         }
-    
+
        p {
            margin: 1em 0;
        }
-       
+
        span {
             font-family: arial;
        } /* Declare your font-family here */
-       
+
        table {
              background: #ffffff;
        }
        /* sets table background color to fix Gmail Themes */
-       
+
        #nobg {
              backgound: none;
        }
        /*  sets wrap table background to none to fix Gmail Themes */
-              
-       
+
+
        .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited,
        .yshortcuts a:hover, .yshortcuts a span {
-            color: black; 
-            text-decoration: none !important; 
-            border-bottom: none !important; 
-            background: none !important; 
-        } 
+            color: black;
+            text-decoration: none !important;
+            border-bottom: none !important;
+            background: none !important;
+        }
     </style>
-    
+    <!--[if gte mso 9]>
+    <style>
+    .mobile-hero, .mobile-hero img, div, p {
+    width:0px !important;
+    height:0px !important;
+    display:none !important;
+    visibility:hidden !important;
+    float:none !important;
+    overflow:hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-collapse:collapse !important;
+    line-height:0 !important;
+    }
+    </style>
+    <![endif]-->
+
 </head>
 
 <body style="width: 100% !important; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
@@ -151,9 +194,20 @@
     <table class="table-w-320" border="0" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #ffffff;" bgcolor="#ffffff">
         <tr>
             <td class="mobile-header" width="600">
-            <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">    
+            <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
             <img src="http://img.en25.com/eloquaimages/clients/Seagate/{3def22f9-f387-40d4-928e-fadaeb83d75a}_seagate_logo.jpg" alt="Seagate" width="600" height="63" style="font-size: 18px; color: #ffffff; font-family: arial; text-align: left; text-indent:35px; line-height:38px;; font-weight: bold; outline: none; text-decoration: none; display: block; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #3e3e3e;" />
             </a>
+            </td>
+        </tr>
+    </table>
+    <table class="table-w-320" border="0" align="center" cellpadding="0" cellspacing="0" width="320">
+        <tr>
+            <td class="mobile-hero" width="320" align="right" bgcolor="#ffffff">
+                <a href="" target="_blank" style="text-decoration:none;">
+                    <p style="display: inline !important; margin:0 !important; padding:0 !important; overflow: hidden !important">
+                        <img class="show-image" src="http://img.en25.com/eloquaimages/clients/Seagate/{cb8c4e1d-fd25-4aeb-89d9-9357b46966cd}_mobile-hero.jpg" alt="↵" width="320" height="234" border="0" align="right" style="outline: none; text-decoration: none; border-top-width: 0; border-left-width: 0; border-right-width: 0; border-bottom-width: 0; background:#c9cdd5; font-size:277px; line-height:277px; color:#f4f7fd; display:none !important;">
+                    </p>
+                </a>
             </td>
         </tr>
     </table>
@@ -161,7 +215,7 @@
         <tr>
             <td width="40" bgcolor="#efede9"></td>
             <td class="column-h-260" width="240" bgcolor="#efede9" valign="middle">
-                 <table border="0" align="center" cellpadding="0" cellspacing="0" width="240" bgcolor="#efede9" style="background-color: #ffffff;">                     
+                 <table border="0" align="center" cellpadding="0" cellspacing="0" width="240" bgcolor="#efede9" style="background-color: #ffffff;">
                     <tr>
                         <td width="240" bgcolor="#efede9" align="center">
                         <span style="font-family: Arial; font-size: 33px; color: #333333; line-height:35px;">
@@ -176,7 +230,7 @@
                     <tr>
                         <td width="240" bgcolor="#efede9" align="center">
                         <span style="font-family: Arial; font-size: 14px; color: #333333;">
-                        Sit back, relax and enjoy some tips, 
+                        Sit back, relax and enjoy some tips,
                         resources and support to get the most
                         out of your Seagate experience.
                         </span>
@@ -187,7 +241,7 @@
                     </tr>
                     <tr>
                         <td width="240" bgcolor="#efede9" align="center">
-                        <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">    
+                        <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
                         <img src="http://img.en25.com/eloquaimages/clients/Seagate/{9b4b95de-6f99-44db-9463-cf56afb7fce8}_get_tips_btn.jpg" alt="Get A Few Tips" width="168" height="23" style="font-size: 14px; color: #ffffff; font-family: arial; text-align: center; font-weight: bold; outline: none; text-decoration: none; display: block; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #f07429;" />
                         </a>
                         </td>
@@ -195,7 +249,7 @@
                 </table>
             </td>
             <td class="column-w-40" width="320">
-            <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">    
+            <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
             <img class="hide-image" src="http://img.en25.com/eloquaimages/clients/Seagate/{2cb67b85-30ea-44d0-a880-1acf2dcb761f}_hero_01.jpg" alt="&#9674;" width="320" height="277" style="font-size: 250px; color: #ffffff; font-family: arial; text-align: center; vertical-align:middle; font-weight: bold; outline: none; text-decoration: none; display: block; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #efede9;" />
             </a>
             </td>
@@ -214,22 +268,22 @@
                 <tr>
                     <td class="column-w-240" width="520" bgcolor="#333333">
                     <span style="font-family: Arial; font-size: 12px; color: #ffffff;">
-                    Thank you for your recent purchase 
-                    and registering your Seagate product. 
-                    Please keep this email for your records. 
-                    our 
+                    Thank you for your recent purchase
+                    and registering your Seagate product.
+                    Please keep this email for your records.
+                    our
                     <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
                     <span style="font-family: Arial; font-size: 12px; color: #109999;">
                     FAQs
                     </span>
                     </a>
-                    to get up and running in no time, 
-                    check out the 
+                    to get up and running in no time,
+                    check out the
                     <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
-                    <span style="font-family: Arial; font-size: 12px; color: #109999;">Support page</span></a>, browse the 
+                    <span style="font-family: Arial; font-size: 12px; color: #109999;">Support page</span></a>, browse the
                     <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
                     <span style="font-family: Arial; font-size: 12px; color: #109999;">Knowledge Base</span></a>, or get
-                    <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title=""> 
+                    <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
                     <span style="font-family: Arial; font-size: 12px; color: #109999;">
                     support via phone, email or chat.
                     </span>
@@ -243,88 +297,70 @@
           <td class="column-w-40" width="39" bgcolor="#333333"></td>
         </tr>
     </table>
-    <!-- Comment Out
-    <table border="0" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #333333;" bgcolor="#333333">
+    <table class="table-w-320" border="0" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #333333;" bgcolor="#333333">
         <tr>
-          <td width="39" height="20" bgcolor="#333333"></td>
+          <td class="column-w-40" width="39" height="20" bgcolor="#333333"></td>
           <td width="522" height="20" bgcolor="#333333"></td>
           <td width="39" height="20" bgcolor="#333333"></td>
         </tr>
-        <tr>
+        <tr class="hide-row">
             <td width="39" bgcolor="#333333"></td>
             <td width="522" bgcolor="#333333" valign="bottom">
-            <img src="http://img.en25.com/eloquaimages/clients/Seagate/{2c304959-4e1e-4b4e-9e1b-f6f1ecddb76d}_border_top_001.gif" width="522" height="8" style="vertical-align: bottom; outline: none; text-decoration: none; display: block; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #333333;" />
+            <img src="http://img.en25.com/eloquaimages/clients/Seagate/{bf0ce089-40b8-4584-b614-e81bd34bc51b}_top_box.jpg" width="522" height="6" style="vertical-align: bottom; outline: none; text-decoration: none; display: block; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #333333;" />
                </td>
             <td width="39" bgcolor="#333333"></td>
         </tr>
     </table>
-   
-    <table border="0" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #333333;" bgcolor="#333333">
+    <table class="table-w-320" border="0" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #333333;" bgcolor="#333333">
         <tr>
-            <td width="39" bgcolor="#333333" valign="top"></td>
-            <td width="1" bgcolor="#4d4d4d" valign="top"></td>
-            <td width="520" bgcolor="#333333">
-              <table border="0" align="center" cellpadding="0" cellspacing="0" width="520" bgcolor="#333333" style="background-color: #333333;">
+            <td class="column-w-40" width="39" bgcolor="#333333" valign="top"></td>
+            <td class="hide-column" width="1" bgcolor="#4d4d4d" valign="top"></td>
+            <td class="column-w-120" width="520" bgcolor="#333333">
+              <table class="table-w-120" border="0" align="center" cellpadding="0" cellspacing="0" width="520" bgcolor="#333333" style="background-color: #333333;">
                       <tr>
-                          <td width="25" bgcolor="#333333"></td>
-                          <td width="215" bgcolor="#333333" valign="middle">
+                          <td class="hide-column" width="25" bgcolor="#333333"></td>
+                          <td class="hide-column" width="215" bgcolor="#333333" valign="middle">
                               <table border="0" align="center" cellpadding="0" cellspacing="0" width="215" style="background-color: #333333;" bgcolor="#333333">
                                 <tr>
                                     <td width="215" height="10" bgcolor="#333333"></td>
                                 </tr>
                                 <tr>
-                                    <td width="215" bgcolor="#333333">
-                                    <span style="font-family: Arial; font-size: 16px; color: #999999;">
-                                    Your Registration Information:
-                                    </span>
-                                    </td>
+                                    <td width="215" bgcolor="#333333"><span style="font-family: Arial; font-size: 16px; color: #999999;">Your Registration Information:</span></td>
                                 </tr>
                                 <tr>
                                     <td width="215" height="10" bgcolor="#333333"></td>
                                 </tr>
                             </table>
                           </td>
-                          <td width="40" bgcolor="#333333"></td>
-                          <td width="200" bgcolor="#333333" valign="middle">
-                              <table border="0" align="center" cellpadding="0" cellspacing="0" width="200" style="background-color: #333333;" bgcolor="#333333">
-                                  
+                          <td class="hide-column" width="40" bgcolor="#333333"></td>
+                          <td class="column-w-240" width="200" bgcolor="#333333" valign="middle">
+                              <table class="table-w-240" border="0" align="center" cellpadding="0" cellspacing="0" width="200" style="background-color: #333333;" bgcolor="#333333">
                                 <tr>
-                                    <td width="200" bgcolor="#333333">
-                                    <span style="font-family: Arial; font-size: 12px; color: #999999;">
-                                    Model Name: [Model Name]
-                                    </span>
-                                    </td>
+                                    <td class="show-column" height="20" style="display: none !important;"><span class="show-span" style="display: none !important; font-family: Arial; font-size: 16px; color: #999999;">Your Registration Information</span></td>
                                 </tr>
                                 <tr>
-                                    <td width="200" bgcolor="#333333">
-                                    <span style="font-family: Arial; font-size: 12px; color: #999999;">
-                                    Serial Number: [Serial Number]
-                                    </span>
-                                    </td>
+                                    <td class="column-w-240" width="200" bgcolor="#333333"><span style="font-family: Arial; font-size: 12px; color: #999999;">Model Name: [Model Name]</span></td>
                                 </tr>
                                 <tr>
-                                     <td width="200" bgcolor="#333333">
-                                    <span style="font-family: Arial; font-size: 12px; color: #999999;">
-                                    Model Number: [Model Number]
-                                    </span>
-                                    </td>
-                                </tr>                         
+                                    <td class="column-w-240" width="200" bgcolor="#333333"><span style="font-family: Arial; font-size: 12px; color: #999999;">Serial Number: [Serial Number]</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="column-w-240" width="200" bgcolor="#333333"><span style="font-family: Arial; font-size: 12px; color: #999999;">Model Number: [Model Number]</span></td>
+                                </tr>
                             </table>
                           </td>
-                          <td width="44" bgcolor="#333333"></td>
+                          <td class="hide-column" width="44" bgcolor="#333333"></td>
                       </tr>
                   </table>
                 </td>
-            <td width="1" bgcolor="#4d4d4d" valign="top"></td>
-            <td width="39" bgcolor="#333333" valign="top"></td>
+            <td class="hide-column" width="1" bgcolor="#4d4d4d" valign="top"></td>
+            <td class="column-w-40" width="39" bgcolor="#333333" valign="top"></td>
         </tr>
     </table>
-    <table border="0" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #333333;" bgcolor="#333333">
-        <tr>
+    <table class="table-w-320" border="0" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #333333;" bgcolor="#333333">
+        <tr class="hide-row">
             <td width="39" bgcolor="#333333"></td>
-            <td width="522" bgcolor="#333333" valign="top">
-            <img src="http://img.en25.com/eloquaimages/clients/Seagate/{bee84af3-bb73-4b52-a1da-4de88be9512a}_border_bottom_001.gif" width="522" height="17" style="vertical-align: top; outline: none; text-decoration: none; display: block; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #333333;" />
-            </td>
+            <td width="522" bgcolor="#333333" valign="top"><img src="http://img.en25.com/eloquaimages/clients/Seagate/{f20c3491-33b0-4983-b20a-5276a28291bd}_btm_box.jpg" width="522" height="6" style="vertical-align: top; outline: none; text-decoration: none; display: block; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #333333;" /></td>
             <td width="39" bgcolor="#333333"></td>
         </tr>
         <tr>
@@ -333,235 +369,142 @@
           <td width="39" height="30" bgcolor="#333333"></td>
         </tr>
     </table>
-    <table border="0" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #ffffff;" bgcolor="#ffffff">
+    <table class="table-w-320" border="0" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #ffffff;" bgcolor="#ffffff">
         <tr>
-            <td width="6">
-            <img src="http://img.en25.com/eloquaimages/clients/Seagate/{206844f2-dcb1-4a8e-88a2-8d401affa1f3}_grad_01.jpg" width="600" height="21" style="outline: none; text-decoration: none; display: block; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #f4f4f4;" />
+            <td class="column-w-320" width="600">
+            <img class="image-w-320" src="http://img.en25.com/eloquaimages/clients/Seagate/{206844f2-dcb1-4a8e-88a2-8d401affa1f3}_grad_01.jpg" width="600" height="21" style="outline: none; text-decoration: none; display: block; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #f4f4f4;" />
             </td>
         </tr>
     </table>
-    <table border="0" align="center" cellpadding="0" cellspacing="0" width="600">
+    <table class="table-w-320" border="0" align="center" cellpadding="0" cellspacing="0" width="600">
         <tr>
             <td width="40" bgcolor="#f4f4f4"></td>
-            <td width="240">
-            <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">    
-            <img src="http://img.en25.com/eloquaimages/clients/Seagate/{761de0f1-4d7d-4288-8896-9a1a3a209f6d}_segate_products.jpg" width="240" height="205" style="font-size: XXpx; color: #000000; font-family: arial; text-align: center; font-weight: bold; outline: none; text-decoration: none; display: block; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #f4f4f4;" />
-            </a>
+            <td class="hide-column" width="240">
+                <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
+                    <img src="http://img.en25.com/eloquaimages/clients/Seagate/{761de0f1-4d7d-4288-8896-9a1a3a209f6d}_segate_products.jpg" width="240" height="205" style="font-size: XXpx; color: #000000; font-family: arial; text-align: center; font-weight: bold; outline: none; text-decoration: none; display: block; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #f4f4f4;" />
+                </a>
             </td>
-            <td width="40" bgcolor="#f4f4f4"></td>
+            <td class="hide-column" width="40" bgcolor="#f4f4f4"></td>
             <td width="240" bgcolor="#f4f4f4" valign="top">
-                 <table border="0" align="center" cellpadding="0" cellspacing="0" width="240" bgcolor="#f4f4f4">
-                 
-                    <tr>
-                        <td width="240" height="30" bgcolor="#f4f4f4"></td>
-                    </tr>
-                    <tr>
-                        <td width="240" bgcolor="#f4f4f4">
-                        <span style="font-family: Arial; font-size: 16px; color: #333333; font-weight: bold;">
-                        Meet the Seagate Drive Family
-                        </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="240" height="15" bgcolor="#f4f4f4"></td>
-                    </tr>
-                    <tr>
-                        <td width="240" bgcolor="#f4f4f4">
-                        <span style="font-family: Arial; font-size: 12px; color: #333333;">
-                        No matter what your digital needs may be, 
-                        Seagate has a solution for you
-                        </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="240" height="15" bgcolor="#f4f4f4"></td>
-                    </tr>
-                    <tr>
-                        <td width="240" bgcolor="#f4f4f4">
-                        <span style="font-family: Arial; font-size: 12px; color: #333333;">
-                        Explore solutions for 
-                        <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
-                        <span style="font-family: Arial; font-size: 12px; color: #109999;">
-                        portable</span></a>,
-                        <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
-                        <span style="font-family: Arial; font-size: 12px; color: #109999;">
-                        small business</span></a>,
-                        <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
-                        <span style="font-family: Arial; font-size: 12px; color: #109999;">
-                        tablets & smartphones</span></a>, 
-                        <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
-                        <span style="font-family: Arial; font-size: 12px; color: #109999;"> 
-                        mac</span></a>,
-                        <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
-                        <span style="font-family: Arial; font-size: 12px; color: #109999;"> 
-                        desktop
-                        </span>
-                        </a>
-                        and 
-                        <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title="">
-                        <span style="font-family: Arial; font-size: 12px; color: #109999;">
-                        home sharing.
-                        </span>
-                        </a>
-                        </span>
-                        </td>
-                        </tr>
-                        </table>
-            </td>
-            <td width="40" bgcolor="#f4f4f4"></td>
-        </tr>
+             <table border="0" align="center" cellpadding="0" cellspacing="0" width="240" bgcolor="#f4f4f4">
+                <tr>
+                    <td class="column-h-15" width="240" height="30" bgcolor="#f4f4f4"></td>
+                </tr>
+                <tr>
+                    <td width="240" bgcolor="#f4f4f4"><span style="font-family: Arial; font-size: 16px; color: #333333; font-weight: bold;">Meet the Seagate Drive Family</span></td>
+                </tr>
+                <tr>
+                    <td width="240" height="15" bgcolor="#f4f4f4"></td>
+                </tr>
+                <tr>
+                    <td width="240" bgcolor="#f4f4f4"><span style="font-family: Arial; font-size: 12px; color: #333333;">No matter what your digital needs may be, Seagate has a solution for you</span></td>
+                </tr>
+                <tr>
+                    <td width="240" height="15" bgcolor="#f4f4f4"></td>
+                </tr>
+                <tr>
+                    <td width="240" bgcolor="#f4f4f4"><span style="font-family: Arial; font-size: 12px; color: #333333;">Explore solutions for <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title=""><span style="font-family: Arial; font-size: 12px; color: #109999;">portable</span></a>,<a href="#" style="color: #000000; text-decoration: none;" target="_blank" title=""><span style="font-family: Arial; font-size: 12px; color: #109999;"> small business</span></a>, <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title=""><span style="font-family: Arial; font-size: 12px; color: #109999;">tablets & smartphones </span></a>, <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title=""><span style="font-family: Arial; font-size: 12px; color: #109999;">mac </span></a>, <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title=""><span style="font-family: Arial; font-size: 12px; color: #109999;">desktop </span></a>and <a href="#" style="color: #000000; text-decoration: none;" target="_blank" title=""><span style="font-family: Arial; font-size: 12px; color: #109999;">home sharing.</span></a></span></td>
+                </tr>
+                <tr>
+                    <td width="240" height="30" bgcolor="#f4f4f4" class="hide-column-desktop"></td>
+                </tr>
+            </table>
+        </td>
+        <td width="40" bgcolor="#f4f4f4"></td>
+    </tr>
     </table>
-    <table border="0" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #f4f4f4;" bgcolor="#f4f4f4">
+    <table class="table-w-320" border="0" align="center" cellpadding="0" cellspacing="0" width="600" style="background-color: #f4f4f4;" bgcolor="#f4f4f4">
         <tr>
-            <td width="600">
-            <img src="http://img.en25.com/eloquaimages/clients/Seagate/{efa6f587-bc3f-42cb-84aa-b89ed495c15c}_grad_social_footer.gif" width="600" height="24" style="outline: none; text-decoration: none; display: block; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #f4f4f4;" />
+            <td class="column-w-320" width="600">
+            <img class="image-w-320"src="http://img.en25.com/eloquaimages/clients/Seagate/{efa6f587-bc3f-42cb-84aa-b89ed495c15c}_grad_social_footer.gif" width="600" height="24" style="outline: none; text-decoration: none; display: block; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #f4f4f4;" />
             </td>
         </tr>
     </table>
-   <table border="0" align="center" cellpadding="0" cellspacing="0" width="600" bgcolor="#e9e9e9" style="background-color: #e9e9e9;">
+   <table class="table-w-320" border="0" align="center" cellpadding="0" cellspacing="0" width="600" bgcolor="#e9e9e9" style="background-color: #f4f4f4;">
         <tr>
-            <td width="40" height="1"  bgcolor="#e9e9e9" valign="top"></td>
-            <td width="240" height="1" bgcolor="#e9e9e9" valign="top"></td>
-            <td width="40" height="1" bgcolor="#e9e9e9" valign="top"></td>
-            <td width="240" height="1" bgcolor="#e9e9e9" valign="top"></td>
-            <td width="40" height="1" bgcolor="#e9e9e9" valign="top"></td>
-        </tr>
-        <tr>
-            <td width="40" bgcolor="#e9e9e9"></td>
-            <td width="240" bgcolor="#e9e9e9">
-                <table border="0" align="center" cellpadding="0" cellspacing="0" width="240" bgcolor="#e9e9e9" style="background-color: #e9e9e9;">
+          <td class="column-w-40" width="40" bgcolor="#e9e9e9"></td>
+          <td class="column-w-120" width="242" bgcolor="#e9e9e9" valign="top">
+                <table class="table-w-120" border="0" align="center" cellpadding="0" cellspacing="0" width="242" bgcolor="#e9e9e9" style="background-color: #f4f4f4;">
                     <tr>
-                        <td width="240" bgcolor="#e9e9e9">
-                            <span style="font-family: Arial; font-weight: bold; font-size: 14px; color: #333333;">
-                            Get More Support 
-                            </span>
-                        </td>
+                        <td class="column-w-120" width="242" height="23" bgcolor="#e9e9e9"></td>
                     </tr>
                     <tr>
-                        <td width="240" height="13" bgcolor="#e9e9e9"></td>
+                        <td class="column-w-120" width="240" bgcolor="#e9e9e9"><span style="font-family: Arial; font-weight: bold; font-size: 14px; color:#333333;">Get <span class="hide-span">More</span> Support</span></td>
                     </tr>
                     <tr>
-                        <td width="240" bgcolor="#e9e9e9">
-                            <a href="http://www.seagate.com/support/contact-support/?cmpid=leadertech_register_support&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Seagate Support">    
-                                <span style="color: #009999; font-family: Arial; font-size: 12px;">
-                                    Seagate Support
-                                </span>
-                            </a>
-                        </td>
+                        <td class="column-w-120" width="242" bgcolor="#e9e9e9" height="14"></td>
                     </tr>
                     <tr>
-                        <td width="240" height="10" bgcolor="#e9e9e9"></td>
+                        <td class="column-w-120" width="240" bgcolor="#e9e9e9"><a href="http://www.seagate.com/support/contact-support/?cmpid=leadertech_register_support&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Seagate Support"><span style="color: #009999; font-family: Arial; font-size: 12px;">Seagate Support</span></a></td>
                     </tr>
                     <tr>
-                        <td width="240" bgcolor="#e9e9e9">
-                            <a href="http://knowledge.seagate.com/pkb_Home?cmpid=emc_leadertech_register_knowledge&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Knowledge Base">    
-                                <span style="color: #009999; font-family: Arial; font-size: 12px;">
-                                    Knowledge Base
-                                </span>
-                            </a>
-                        </td>
+                        <td class="column-w-120" width="242" bgcolor="#e9e9e9" height="11"></td>
                     </tr>
                     <tr>
-                        <td width="240" height="10" bgcolor="#e9e9e9"></td>
+                        <td class="column-w-120" width="240" bgcolor="#e9e9e9"><a href="http://knowledge.seagate.com/pkb_Home?cmpid=emc_leadertech_register_knowledge&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Knowledge Base"><span style="color: #009999; font-family: Arial; font-size: 12px;">Knowledge Base</span></a></td>
                     </tr>
                     <tr>
-                        <td width="240" bgcolor="#e9e9e9">
-                        <a href="http://forums.seagate.com/?cmpid=leadertech_register_forums&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Community Forums">    
-                                <span style="color: #009999; font-family: Arial; font-size: 12px;">
-                                    Community Forums
-                                </span>
-                            </a>
-                        </td>
+                        <td class="column-w-120" width="242" bgcolor="#e9e9e9" height="11"></td>
                     </tr>
                     <tr>
-                        <td width="240" height="10" bgcolor="#e9e9e9"></td>
+                        <td class="column-w-120" width="240" bgcolor="#e9e9e9"><a href="http://forums.seagate.com/?cmpid=leadertech_register_forums&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Community Forums"><span style="color: #009999; font-family: Arial; font-size: 12px;">Community Forums</span></a></td>
                     </tr>
                     <tr>
-                        <td width="240" bgcolor="#e9e9e9">
-                        <a href="http://www.seagate.com/support/downloads/?cmpid=leadertech_register_downloads&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Downloads">    
-                                <span style="color: #009999; font-family: Arial; font-size: 12px;">
-                                    Downloads
-                                </span>
-                            </a>
-                        </td>
+                        <td class="column-w-120" width="242" bgcolor="#e9e9e9" height="11"></td>
                     </tr>
                     <tr>
-                        <td width="240" height="25" bgcolor="#e9e9e9"></td>
+                        <td class="column-w-120" width="240" bgcolor="#e9e9e9"><a href="http://www.seagate.com/support/downloads/?cmpid=leadertech_register_downloads&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Downloads"><span style="color: #009999; font-family: Arial; font-size: 12px;">Downloads</span></a></td>
+                    </tr>
+                    <tr>
+                        <td class="column-w-116" width="242" bgcolor="#e9e9e9" height="34"></td>
                     </tr>
                 </table>
             </td>
-            <td width="40"></td>
-            <td width="240" valign="top">
-                <table border="0" align="right" cellpadding="0" cellspacing="0" width="240" style="vertical-align: top; background-color: #e9e9e9;" bgcolor="#e9e9e9">
+            <td class="gutter-17" width="28" bgcolor="#e9e9e9"></td>
+            <td class="column-w-120" width="242" bgcolor="#e9e9e9" valign="top">
+                <table class="table-w-120" border="0" align="center" cellpadding="0" cellspacing="0" width="242" bgcolor="#f4f4f4" style="background-color: #ffffff;">
                     <tr>
-                        <td width="240" bgcolor="#e9e9e9">
-                            <span style="font-family: Arial; font-weight: bold; font-size: 14px; color: #333333;">
-                            Stay In Touch
-                            </span>
-                        </td>
+                        <td class="column-w-120" width="242" height="23" bgcolor="#e9e9e9"></td>
                     </tr>
                     <tr>
-                        <td width="240" height="10" bgcolor="#e9e9e9"></td>
+                        <td class="column-w-120" width="240" bgcolor="#e9e9e9"><span style="font-family: Arial; font-weight: bold; font-size: 14px; color: #333333;">Stay In Touch</span></td>
                     </tr>
                     <tr>
-                        <td width="240" bgcolor="#e9e9e9">
-                          <img src="http://img.en25.com/eloquaimages/clients/Seagate/{68e38486-8c63-465e-9b04-4e79ccef7cd3}_youtube_icon.jpg" width="17" height="17" style="font-size: XXpx; color: #000000; font-family: arial; text-align: center; display: inline-block; outline: none; text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #BD241E;" />
-                             <a href="http://<elqdomain type=1/>/e/er?s=<span class=eloquaemail>siteid</span>&lid=9539&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Seagate on YouTube">    
-                              <span style="color: #009999; font-family: Arial; font-size: 12px; vertical-align: top;">
-                                  Seagate on YouTube
-                              </span>
-                          </a>  
-                        </td>
+                        <td class="column-w-120" width="242" bgcolor="#e9e9e9" height="14"></td>
                     </tr>
                     <tr>
-                        <td width="240" height="7" bgcolor="#e9e9e9"></td>
+                        <td class="column-w-120" width="240" bgcolor="#e9e9e9"><img src="http://img.en25.com/eloquaimages/clients/Seagate/{68e38486-8c63-465e-9b04-4e79ccef7cd3}_youtube_icon.jpg" width="17" height="17" style="font-size: XXpx; color: #000000; font-family: arial; text-align: center; display: inline-block; outline: none; text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #BD241E;" /><a href="http://<elqdomain type=1/>/e/er?s=<span class=eloquaemail>siteid</span>&lid=9539&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Seagate on YouTube"><span style="color: #009999; font-family: Arial; font-size: 12px; vertical-align: top;"><span class="hide-span" style="vertical-align: top;">  Seagate on</span> YouTube</span></a></td>
                     </tr>
                     <tr>
-                        <td width="240" bgcolor="#e9e9e9">
-                            <img src="http://img.en25.com/eloquaimages/clients/Seagate/{f21657fa-a17c-47cb-b461-d763d893d8b8}_fb_icon.jpg" width="17" height="17" style="font-size: XXpx; color: #000000; font-family: arial; text-align: center; display: inline-block; outline: none; text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #5573AF;" />
-                             <a href="http://<elqdomain type=1/>/e/er?s=<span class=eloquaemail>siteid</span>&lid=9540&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Seagate on Facebook">    
-                              <span style="color: #009999; font-family: Arial; font-size: 12px; vertical-align: top;">
-                                  Seagate on Facebook
-                              </span>
-                          </a>
-                        </td>
-                    </tr>
-                     <tr>
-                        <td width="240" height="7" bgcolor="#e9e9e9"></td>
+                        <td class="column-w-120" width="242" bgcolor="#e9e9e9" height="11"></td>
                     </tr>
                     <tr>
-                        <td width="240" bgcolor="#e9e9e9">
-                           <img src="http://img.en25.com/eloquaimages/clients/Seagate/{de317074-511c-488f-a7b7-5c77274d6658}_twt_icon.jpg" width="17" height="17" style="font-size: XXpx; color: #000000; font-family: arial; text-align: center; display: inline-block; outline: none; text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #A9E5E6;" />
-                             <a href="http://<elqdomain type=1/>/e/er?s=<span class=eloquaemail>siteid</span>&lid=9541&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Follow Seagate">    
-                              <span style="color: #009999; font-family: Arial; font-size: 12px; line-height: 15px; vertical-align: top;">
-                                  Follow Seagate
-                              </span>
-                          </a> 
-                        </td>
-                    </tr>
-                     <tr>
-                        <td width="240" height="7" bgcolor="#e9e9e9"></td>
+                        <td class="column-w-120" width="240" bgcolor="#e9e9e9"><img src="http://img.en25.com/eloquaimages/clients/Seagate/{f21657fa-a17c-47cb-b461-d763d893d8b8}_fb_icon.jpg" width="17" height="17" style="font-size: XXpx; color: #000000; font-family: arial; text-align: center; display: inline-block; outline: none; text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #5573AF;" /><a href="http://<elqdomain type=1/>/e/er?s=<span class=eloquaemail>siteid</span>&lid=9540&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Seagate on Facebook"><span style="color: #009999; font-family: Arial; font-size: 12px; vertical-align: top;"><span class="hide-span" style="vertical-align: top;">Seagate on</span> Facebook</span></a></td>
                     </tr>
                     <tr>
-                        <td width="240" bgcolor="#e9e9e9">
-                            <img src="http://img.en25.com/eloquaimages/clients/Seagate/{85713721-835e-4e77-b214-cf82b1f4c5e5}_goog_plus_icon.jpg" width="17" height="17" style="font-size: XXpx; color: #000000; font-family: arial; text-align: center; display: inline-block; outline: none; text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #c63b1e;" />
-                             <a href="http://<elqdomain type=1/>/e/er?s=<span class=eloquaemail>siteid</span>&lid=9542&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Seagate on Google+">    
-                              <span style="color: #009999; font-family: Arial; font-size: 12px; vertical-align: top;">
-                                  
-Seagate on Google+
-                              </span>
-                          </a>
-                        </td>
+                        <td class="column-w-120" width="242" bgcolor="#e9e9e9" height="11"></td>
+                    </tr>
+                    <tr>
+                        <td class="column-w-120" width="240" bgcolor="#e9e9e9"><img src="http://img.en25.com/eloquaimages/clients/Seagate/{de317074-511c-488f-a7b7-5c77274d6658}_twt_icon.jpg" width="17" height="17" style="font-size: XXpx; color: #000000; font-family: arial; text-align: center; display: inline-block; outline: none; text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #A9E5E6;" /><a href="http://<elqdomain type=1/>/e/er?s=<span class=eloquaemail>siteid</span>&lid=9541&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Follow Seagate"><span style="color: #009999; font-family: Arial; font-size: 12px; line-height: 15px; vertical-align: top;">Follow Seagate</span></a></td>
+                    </tr>
+                    <tr>
+                        <td class="column-w-120" width="242" bgcolor="#e9e9e9" height="11"></td>
+                    </tr>
+                    <tr>
+                        <td class="column-w-120" width="240" bgcolor="#e9e9e9"><img src="http://img.en25.com/eloquaimages/clients/Seagate/{85713721-835e-4e77-b214-cf82b1f4c5e5}_goog_plus_icon.jpg" width="17" height="17" style="font-size: XXpx; color: #000000; font-family: arial; text-align: center; display: inline-block; outline: none; text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: #c63b1e;" /><a href="http://<elqdomain type=1/>/e/er?s=<span class=eloquaemail>siteid</span>&lid=9542&elq=<span class=eloquaemail>recipientid</span>" style="color: #009999; text-decoration: none;" target="_blank" title="Seagate on Google+"><span style="color: #009999; font-family: Arial; font-size: 12px; vertical-align: top;"><span class="hide-span" style="vertical-align: top;">Seagate on</span> Google+</span></a></td>
+                    </tr>
+                    <tr>
+                        <td class="column-w-120" width="242" bgcolor="#e9e9e9" height="34"></td>
                     </tr>
                 </table>
             </td>
-            <td width="40"></td>
+            <td class="column-w-40" width="48" bgcolor="#e9e9e9"></td>
         </tr>
-    </table>   
+    </table>
     <!-- End email code -->
     </td>
     </tr>
-    </table>  
+    </table>
     <!-- End of wrapper table -->
 
 </body>
