@@ -168,39 +168,70 @@ small {
   line-height: 1.42857em; }
 
 .digital-production:before {
-  content: "";
   background: url("images/www-icon.png") no-repeat;
+  content: "";
+  height: 28px;
+  width: 30px; }
+.digital-production else {
+  background: url("images/www-icon.png") no-repeat;
+  content: "";
   height: 28px;
   width: 30px; }
 
 .nurturing-tracks:before {
-  content: "";
   background: url("images/mail-icon.png") no-repeat;
+  content: "";
+  height: 23px;
+  width: 34px; }
+.nurturing-tracks else {
+  background: url("images/mail-icon.png") no-repeat;
+  content: "";
   height: 23px;
   width: 34px; }
 
 .mobile-demand-generation:before {
-  content: "";
   background: url("images/calculator-icon.png") no-repeat;
+  content: "";
   height: 29px;
-  width: 22px;
+  width: 22px; }
+.mobile-demand-generation else {
+  background: url("images/calculator-icon.png") no-repeat;
+  content: "";
+  height: 29px;
+  width: 22px; }
+.mobile-demand-generation:before {
   left: -35px; }
 
 .full-system-auditing:before {
-  content: "";
   background: url("images/magnifying-glass-icon.png") no-repeat;
+  content: "";
+  height: 30px;
+  width: 31px; }
+.full-system-auditing else {
+  background: url("images/magnifying-glass-icon.png") no-repeat;
+  content: "";
   height: 30px;
   width: 31px; }
 
 .creative-and-dev:before {
-  content: "";
   background: url("images/pen-icon.png") no-repeat;
+  content: "";
+  height: 31px;
+  width: 32px; }
+.creative-and-dev else {
+  background: url("images/pen-icon.png") no-repeat;
+  content: "";
   height: 31px;
   width: 32px; }
 
 .target-personas:before {
-  content: "";
   background: url("images/persona-icon.png") no-repeat;
+  content: "";
+  height: 29px;
+  width: 34px; }
+.target-personas else {
+  background: url("images/persona-icon.png") no-repeat;
+  content: "";
   height: 29px;
   width: 34px; }
 
@@ -222,10 +253,37 @@ small {
     *display: inline;
     white-space: nowrap; }
 
-.m-footer-social-icon a {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left; }
+.m-footer-social-icon {
+  height: 26px;
+  width: 25px; }
+  .m-footer-social-icon a {
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent; }
+
+.twitter {
+  display: inline-block; }
+  .twitter else {
+    background: url("images/twitter.png") no-repeat;
+    content: "";
+    height: 26px;
+    width: 25px; }
+
+.facebook {
+  display: inline-block; }
+  .facebook else {
+    background: url("images/facebook.png") no-repeat;
+    content: "";
+    height: 26px;
+    width: 25px; }
+
+.google {
+  display: inline-block; }
+  .google else {
+    background: url("images/google.png") no-repeat;
+    content: "";
+    height: 26px;
+    width: 25px; }
 
 @media (min-width: 11em) {
   .l-section-one,
