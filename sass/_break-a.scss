@@ -1,0 +1,48 @@
+@include at-breakpoint($break-a) {
+
+%section-rhythm { @include rhythm($padding-leader: 1, $padding-trailer: 1); }
+
+%section-gutter {
+    padding-right:$gutter-width;
+    padding-left:$gutter-width;
+}
+
+
+// --------------------------------------------------------------------------
+// Layout
+// --------------------------------------------------------------------------
+
+.l-wrapper {
+    @include susy-grid-background;
+    @include span-columns($break-a, $break-a);
+    &:before { content: "Break A"; color: #000;}
+}
+
+.l-header {
+    @include box-sizing(border-box);
+    @include rhythm($padding-leader: 1, $padding-trailer: 5);
+    @extend %section-gutter;
+}
+
+.l-section-one,
+.l-section-two,
+.l-footer {
+    @extend %section-rhythm;
+    @extend %section-gutter;
+}
+
+// --------------------------------------------------------------------------
+// Module
+// --------------------------------------------------------------------------
+
+.m-headline-image,
+.m-headline,
+.m-subhead { @include rhythm($trailer: .5); }
+
+.input-submit { @extend %section-rhythm; }
+
+.input-text { width: 100%; }
+
+.m-section-hero { height: 60px; }
+
+}

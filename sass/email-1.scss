@@ -1,0 +1,266 @@
+// --------------------------------------------------------------------------
+// Imports
+// --------------------------------------------------------------------------
+
+@import "config";
+
+// --------------------------------------------------------------------------
+// Base element styles
+// --------------------------------------------------------------------------
+
+// Font variations from Typekit:
+//
+// Variation | font-family    |   font-weight | font-style
+// -------------------------------------------
+// Regular      "ff-milo-web"    400                 normal
+// Italic           "ff-milo-web"    400                  italic
+// Bold            "ff-milo-web"    700                 normal
+// Bold Italic   "ff-milo-web"    700                 italic
+
+html,
+body {
+    font-family: "ff-milo-web", tahoma, arial, sans-serif;
+    font-style: normal; //Regular
+    font-weight: 400; //Normal
+}
+
+h1,
+h2,
+h3,
+h4,
+p { margin: 0; }
+
+strong {
+    font-style: normal;
+    font-weight: 700;
+}
+
+small {
+    @include adjust-font-size-to(12px, .75);
+    color: #fff;
+
+    a:hover,
+    a:focus,
+    a:active,
+    a:link,
+    a:visited {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+// --------------------------------------------------------------------------
+// Global Helpers and Anonymous Selectors
+// --------------------------------------------------------------------------
+
+.center { margin: 0 auto; }
+
+.clear { @include clearfix; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+
+// --------------------------------------------------------------------------
+// Layout
+// --------------------------------------------------------------------------
+
+.l-wrapper { @include container; }
+
+.l-header {
+    background: url(images/hero-1.jpg) no-repeat #96afb4;
+    background-position: bottom center;
+    background-size: 100%;
+    border-top: 1px solid #7a7274;
+    color: #fff;
+}
+
+.l-section-one {
+    background: $ip-light-blue;
+    color: $ip-brown;
+}
+
+.l-section-two {
+    background: $ip-mid-blue;
+    color: #fff;
+}
+
+.l-footer { background: $ip-dark-blue; }
+
+
+// --------------------------------------------------------------------------
+// Module
+// --------------------------------------------------------------------------
+
+// Anonymous selectors -------------------------------------------------------
+
+%headline {
+    @include adjust-font-size-to(16px, 1);
+    font-style: normal;
+    font-weight: 700;
+}
+
+%subhead {
+    @include adjust-font-size-to(16px, .75);
+    font-style: normal;
+    font-weight: 700;
+}
+
+%copy {
+    @include adjust-font-size-to(14px, 1);
+    @include rhythm($trailer: 1);
+    font-style: normal;
+    font-weight: 400;
+}
+
+// --------------------------------------------------------------------------
+
+.m-logo-bar {
+    background: url("images/ipm-logo.png") no-repeat #96afb4;
+    background-position: center center;
+    background-size: 124px 14px;
+    border-bottom: 1px solid #ada5a7;
+    height: 2em;
+    width: 100%;
+}
+
+.m-headline-image {
+    @include hide-text;
+}
+    .mobile-demand-gen {
+        background: url("images/mobile-demand-gen.png") no-repeat;
+        background-position: center center;
+        background-size: 268px 45px;
+        height: 45px;
+        width: 100%;
+    }
+    .our-story {
+        background: url("images/our-story.png") no-repeat;
+        background-position: left center;
+        background-size: contain;
+        height: 59px;
+        width: 100%;
+    }
+
+.m-headline { @extend %headline; }
+
+.m-subhead { @extend %subhead; }
+
+.m-form { overflow: hidden; }
+    .input-submit {
+        @extend .center;
+        display: block;
+    }
+    .input-text {
+        @include box-sizing(border-box);
+        border: none;
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto 1em auto;
+        padding: .5em 1em;
+        width: 90%;
+        &:focus {
+            outline: transparent;
+            // @include box-shadow(lighten($ft-blue, 25%) 0 1px 15px 1px inset);
+        }
+    }
+    .appendix {}
+
+.m-section-hero {
+    background: url("images/busts.png") no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 100%;
+}
+
+.m-section-copy {
+    @extend %copy;
+}
+
+.m-services-list { @include no-bullets; }
+    .m-services-list-item {
+        &:before {
+            display: inline-block;
+            margin-top: -50px;
+            position: relative;
+            top: 50px;
+            left: -40px;
+        }
+    }
+    .m-services-list-item-headline {
+        @include adjust-font-size-to(14px, 1);
+    }
+    .m-services-list-item-copy {
+        @include adjust-font-size-to(14px, 1);
+    }
+    // Item bullet images
+    .digital-production {
+        &:before {
+            content: "";
+            background: url("images/www-icon.png") no-repeat;
+            height: 28px;
+            width: 30px;
+        }
+    }
+    .nurturing-tracks {
+        &:before {
+            content: "";
+            background: url("images/mail-icon.png") no-repeat;
+            height: 23px;
+            width: 34px;
+        }
+    }
+    .mobile-demand-generation {
+        &:before {
+            content: "";
+            background: url("images/calculator-icon.png") no-repeat;
+            height: 29px;
+            width: 22px;
+            left: -35px;
+        }
+    }
+    .full-system-auditing {
+        &:before {
+            content: "";
+            background: url("images/magnifying-glass-icon.png") no-repeat;
+            height: 30px;
+            width: 31px;
+        }
+    }
+    .creative-and-dev {
+        &:before {
+            content: "";
+            background: url("images/pen-icon.png") no-repeat;
+            height: 31px;
+            width: 32px;
+        }
+    }
+    .target-personas {
+        &:before {
+            content: "";
+            background: url("images/persona-icon.png") no-repeat;
+            height: 29px;
+            width: 34px;
+        }
+    }
+
+.m-footer-social { @include inline-block-list; }
+    .m-footer-social-icon a{
+        @include hide-text;
+    }
+    // Social icons
+    .twitter {}
+    .facebook {}
+    .google {}
+
+.m-footer-copy {}
+
+
+// --------------------------------------------------------------------------
+// Breakpoints
+// --------------------------------------------------------------------------
+
+// Smallest...
+@import "break-a";
+// ...Largest
