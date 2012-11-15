@@ -114,6 +114,25 @@ small {
     font-weight: 400;
 }
 
+
+// $image-url: relative path to the asset
+// $height, $width self explanatory
+// $pseudo: before, or after. if blank then it will be on the element itself.
+@mixin icon($pseudo, $image-url, $height, $width) {
+    @if $pseudo == "before" or $pseudo == "after" {
+        &:#{$pseudo} {
+            background: url($image-url) no-repeat;
+            content: "";
+            height: $height;
+            width: $width;
+        }
+    } else {
+        background: url($image-url) no-repeat;
+        content: "";
+        height: $height;
+        width: $width;
+    }
+}
 // --------------------------------------------------------------------------
 
 .m-logo-bar {
@@ -188,71 +207,40 @@ small {
             left: -40px;
         }
     }
-    .m-services-list-item-headline {
-        @include adjust-font-size-to(14px, 1);
-    }
-    .m-services-list-item-copy {
-        @include adjust-font-size-to(14px, 1);
-    }
+    .m-services-list-item-headline { @include adjust-font-size-to(14px, 1); }
+    .m-services-list-item-copy { @include adjust-font-size-to(14px, 1); }
     // Item bullet images
-    .digital-production {
-        &:before {
-            content: "";
-            background: url("images/www-icon.png") no-repeat;
-            height: 28px;
-            width: 30px;
-        }
-    }
-    .nurturing-tracks {
-        &:before {
-            content: "";
-            background: url("images/mail-icon.png") no-repeat;
-            height: 23px;
-            width: 34px;
-        }
-    }
+    .digital-production { @include icon(before, "images/www-icon.png", 28px, 30px); }
+    .nurturing-tracks { @include icon(before, "images/mail-icon.png", 23px, 34px); }
     .mobile-demand-generation {
+        @include icon(before, "images/calculator-icon.png", 29px, 22px);
         &:before {
-            content: "";
-            background: url("images/calculator-icon.png") no-repeat;
-            height: 29px;
-            width: 22px;
             left: -35px;
         }
     }
-    .full-system-auditing {
-        &:before {
-            content: "";
-            background: url("images/magnifying-glass-icon.png") no-repeat;
-            height: 30px;
-            width: 31px;
-        }
-    }
-    .creative-and-dev {
-        &:before {
-            content: "";
-            background: url("images/pen-icon.png") no-repeat;
-            height: 31px;
-            width: 32px;
-        }
-    }
-    .target-personas {
-        &:before {
-            content: "";
-            background: url("images/persona-icon.png") no-repeat;
-            height: 29px;
-            width: 34px;
-        }
-    }
+    .full-system-auditing { @include icon(before, "images/magnifying-glass-icon.png", 30px, 31px); }
+    .creative-and-dev { @include icon(before, "images/pen-icon.png", 31px, 32px); }
+    .target-personas { @include icon(before, "images/persona-icon.png", 29px, 34px); }
 
 .m-footer-social { @include inline-block-list; }
-    .m-footer-social-icon a{
-        @include hide-text;
+    .m-footer-social-icon {
+        height: 26px;
+        width: 25px;
+        a { @include squish-text; }
     }
     // Social icons
-    .twitter {}
-    .facebook {}
-    .google {}
+    .twitter {
+        display: inline-block;
+        @include icon("", "images/twitter.png", 26px, 25px);
+    }
+    .facebook {
+        display: inline-block;
+        @include icon("", "images/facebook.png", 26px, 25px);
+    }
+    .google {
+        display: inline-block;
+        @include icon("", "images/google.png", 26px, 25px);
+    }
 
 .m-footer-copy {}
 
