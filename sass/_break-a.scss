@@ -14,8 +14,7 @@
 
 .l-wrapper {
     @include susy-grid-background;
-    @include span-columns($break-a, $break-a);
-    &:before { content: "Break A"; color: #000;}
+    // &:before { content: "Break A"; color: #000;}
 }
 
 .l-header {
@@ -44,5 +43,13 @@
 .input-text { width: 100%; }
 
 .m-section-hero { height: 60px; }
+
+// --------------------------------------------------------------------------
+// Transition
+// --------------------------------------------------------------------------
+
+.m-section-hero {
+    @include single-transition(height ease-in-out .25s);
+}
 
 }

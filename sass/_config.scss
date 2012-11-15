@@ -7,6 +7,14 @@
 
 
 // --------------------------------------------------------------------------
+// IE Support
+// --------------------------------------------------------------------------
+
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false;
+
+
+// --------------------------------------------------------------------------
 // Vertical Rhythm
 // --------------------------------------------------------------------------
 
@@ -19,8 +27,9 @@ $base-rhythm-unit: 1em;
 // Horizontal Rhythm (Grid)
 // --------------------------------------------------------------------------
 
-$total-columns: 12;
-$column-width: 2em;
+$container-style: magic;
+$total-columns: 16;
+$column-width: 4em;
 $gutter-width: 1em;
 $grid-padding: 0;
 
@@ -31,7 +40,7 @@ $grid-padding: 0;
 
 // Smallest...
 $break-a: 4;
-$break-b: 12;
+$break-b: 16;
 // ...Largest
 
 
@@ -40,6 +49,8 @@ $break-b: 12;
 // --------------------------------------------------------------------------
 
 $ip-brown: #483131;
+$ip-light-grey: #a2a5a6;
+$ip-dark-grey: #463e3f;
 $ip-light-blue: #dfe7e9;
 $ip-mid-blue: #95afb5;
 $ip-dark-blue: #444b4d;

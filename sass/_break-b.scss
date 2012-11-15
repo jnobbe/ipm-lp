@@ -1,0 +1,70 @@
+@include at-breakpoint($break-b) {
+
+
+// --------------------------------------------------------------------------
+// Layout
+// --------------------------------------------------------------------------
+
+.l-wrapper {
+    @include susy-grid-background;
+    // &:before { content: "Break B"; color: #000;}
+}
+
+.l-header {
+    @include box-sizing(border-box);
+    @include rhythm($padding-leader: 1, $padding-trailer: 5);
+    @include span-columns($break-b, $break-b);
+    overflow: hidden;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.l-section-one,
+.l-section-two,
+.l-footer {
+    @extend %section-rhythm;
+    @extend %section-gutter;
+}
+
+.l-wrapper,
+.l-header,
+.l-section-one,
+.l-section-two,
+.m-logo-bar {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+// --------------------------------------------------------------------------
+// Module
+// --------------------------------------------------------------------------
+
+.m-mobile-optimized {
+    @include icon("", "images/mobile-optimized.png", 68px, 157px);
+    display: block;
+    float: right;
+    margin-bottom: -68px;
+    position: relative;
+    z-index: 1;
+}
+
+.main-header {
+    background: url("images/desktop-header.png") no-repeat;
+    background-position: center center;
+    background-size: 508px 221px;
+    display: inline-block;
+    float: left;
+    height: 221px;
+    width: 508px;
+    @include pre(3);
+}
+
+.m-subhead,
+.m-form {
+    @include span-columns(6, $break-b);
+}
+
+.m-section-hero { height: 120px; }
+
+}
