@@ -19,6 +19,7 @@
 
 html,
 body {
+    background: $ip-light-blue;
     font-family: "ff-milo-web", tahoma, arial, sans-serif;
     font-style: normal; //Regular
     font-weight: 400; //Normal
@@ -28,7 +29,8 @@ h1,
 h2,
 h3,
 h4,
-p { margin: 0; }
+p,
+ul { margin: 0; }
 
 strong {
     font-style: normal;
@@ -83,10 +85,14 @@ small {
 
 .l-section-two {
     background: $ip-mid-blue;
+    border-bottom: 1px solid $ip-light-grey;
     color: #fff;
 }
 
-.l-footer { background: $ip-dark-blue; }
+.l-footer {
+    background: $ip-dark-blue;
+    border-top: 1px solid $ip-dark-grey;
+}
 
 
 // --------------------------------------------------------------------------
@@ -112,8 +118,23 @@ small {
     @include rhythm($trailer: 1);
     font-style: normal;
     font-weight: 400;
+    &:last-of-type { margin-bottom: 0; }
 }
 
+%legal {
+    display: block;
+    @include rhythm($trailer: 1);
+    font-style: normal;
+    font-weight: 400;
+    &:last-of-type { margin-bottom: 0; }
+}
+
+%icon-list {
+    @include inline-block-list;
+    padding-right: 10px;
+    text-align: center;
+    &:last-of-type { padding-right: 0; }
+}
 
 // $image-url: relative path to the asset
 // $height, $width self explanatory
@@ -126,14 +147,18 @@ small {
             height: $height;
             width: $width;
         }
-    } else {
+    } @else {
         background: url($image-url) no-repeat;
-        content: "";
         height: $height;
         width: $width;
     }
 }
 // --------------------------------------------------------------------------
+
+.m-mobile-optimized {
+    height: 0;
+    @include single-transition(height ease-in-out .25s);
+}
 
 .m-logo-bar {
     background: url("images/ipm-logo.png") no-repeat #96afb4;
@@ -147,8 +172,8 @@ small {
 .m-headline-image {
     @include hide-text;
 }
-    .mobile-demand-gen {
-        background: url("images/mobile-demand-gen.png") no-repeat;
+    .main-header {
+        background: url("images/mobile-header.png") no-repeat;
         background-position: center center;
         background-size: 268px 45px;
         height: 45px;
@@ -187,10 +212,11 @@ small {
     .appendix {}
 
 .m-section-hero {
+    @include rhythm($trailer: 1);
     background: url("images/busts.png") no-repeat;
-        background-position: center center;
-        background-size: contain;
-        width: 100%;
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
 }
 
 .m-section-copy {
@@ -222,27 +248,53 @@ small {
     .creative-and-dev { @include icon(before, "images/pen-icon.png", 31px, 32px); }
     .target-personas { @include icon(before, "images/persona-icon.png", 29px, 34px); }
 
-.m-footer-social { @include inline-block-list; }
+.m-client-logo {
+    @extend %icon-list;
+    @include rhythm($leader: 1);
+}
+    .m-client-logo-icon {
+        padding-right: 10px;
+        &:last-of-type { padding-right: 0; }
+    }
+    .seagate { @include icon("", "images/seagate.png", 35px, 64px); }
+    .fluke { @include icon("", "images/fluke.png", 35px, 64px); }
+    .ipass { @include icon("", "images/ipass.png", 35px, 26px); }
+    .nimbus { @include icon("", "images/nimbus.png", 35px, 44px); }
+    .fortrust { @include icon("", "images/fortrust.png", 35px, 85px); }
+    .webtrends { @include icon("", "images/webtrends.png", 35px, 64px); }
+
+.m-footer-social {
+    @extend %icon-list;
+    background: $ip-dark-blue;
+    border-top: 1px solid $ip-dark-grey;
+    border-bottom: 1px solid $ip-light-grey;
+    display: block;
+}
     .m-footer-social-icon {
-        height: 26px;
-        width: 25px;
-        a { @include squish-text; }
+        @include rhythm($leader: .25, $trailer: .25);
+        height: 25px;
+        width: 26px;
+        padding-right: 10px;
+        a { @include hide-text; }
+        &:last-of-type { padding-right: 0; }
     }
     // Social icons
     .twitter {
         display: inline-block;
-        @include icon("", "images/twitter.png", 26px, 25px);
+        @include icon("", "images/twitter.png", 25px, 26px);
     }
     .facebook {
         display: inline-block;
-        @include icon("", "images/facebook.png", 26px, 25px);
+        @include icon("", "images/facebook.png", 25px, 26px);
     }
     .google {
         display: inline-block;
-        @include icon("", "images/google.png", 26px, 25px);
+        @include icon("", "images/google.png", 25px, 26px);
     }
 
-.m-footer-copy {}
+.m-footer-copy {
+    @extend %legal;
+}
 
 
 // --------------------------------------------------------------------------
@@ -251,4 +303,5 @@ small {
 
 // Smallest...
 @import "break-a";
+@import "break-b";
 // ...Largest

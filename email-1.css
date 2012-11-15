@@ -1,5 +1,6 @@
 html,
 body {
+  background: #dfe7e9;
   font-family: "ff-milo-web", tahoma, arial, sans-serif;
   font-style: normal;
   font-weight: 400; }
@@ -8,7 +9,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+ul {
   margin: 0; }
 
 strong {
@@ -31,8 +33,7 @@ small {
   margin: 0 auto; }
 
 .clear {
-  overflow: hidden;
-  *zoom: 1; }
+  overflow: hidden; }
 
 .left {
   float: left; }
@@ -41,9 +42,7 @@ small {
   float: right; }
 
 .l-wrapper {
-  *zoom: 1;
-  max-width: 35em;
-  _width: 35em;
+  max-width: 79em;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;
@@ -66,10 +65,12 @@ small {
 
 .l-section-two {
   background: #95afb5;
+  border-bottom: 1px solid #a2a5a6;
   color: #fff; }
 
 .l-footer {
-  background: #444b4d; }
+  background: #444b4d;
+  border-top: 1px solid #463e3f; }
 
 .m-headline {
   font-size: 1em;
@@ -92,6 +93,48 @@ small {
   margin-bottom: 1.25em;
   font-style: normal;
   font-weight: 400; }
+  .m-section-copy:last-of-type {
+    margin-bottom: 0; }
+
+.m-footer-copy {
+  display: block;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.25em;
+  font-style: normal;
+  font-weight: 400; }
+  .m-footer-copy:last-of-type {
+    margin-bottom: 0; }
+
+.m-client-logo, .m-footer-social {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  padding-right: 10px;
+  text-align: center; }
+  .m-client-logo li, .m-footer-social li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    white-space: nowrap; }
+  .m-client-logo:last-of-type, .m-footer-social:last-of-type {
+    padding-right: 0; }
+
+.m-mobile-optimized {
+  height: 0;
+  -webkit-transition: height ease-in-out, 1s;
+  -webkit-transition-delay: 0.25s, 0s;
+  -moz-transition: height ease-in-out 0.25s, 1s;
+  -o-transition: height ease-in-out 0.25s, 1s;
+  transition: height ease-in-out 0.25s, 1s; }
 
 .m-logo-bar {
   background: url("images/ipm-logo.png") no-repeat #96afb4;
@@ -106,8 +149,8 @@ small {
   overflow: hidden;
   text-align: left; }
 
-.mobile-demand-gen {
-  background: url("images/mobile-demand-gen.png") no-repeat;
+.main-header {
+  background: url("images/mobile-header.png") no-repeat;
   background-position: center center;
   background-size: 268px 45px;
   height: 45px;
@@ -140,6 +183,10 @@ small {
     outline: transparent; }
 
 .m-section-hero {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.25em;
   background: url("images/busts.png") no-repeat;
   background-position: center center;
   background-size: contain;
@@ -172,29 +219,14 @@ small {
   content: "";
   height: 28px;
   width: 30px; }
-.digital-production else {
-  background: url("images/www-icon.png") no-repeat;
-  content: "";
-  height: 28px;
-  width: 30px; }
 
 .nurturing-tracks:before {
   background: url("images/mail-icon.png") no-repeat;
   content: "";
   height: 23px;
   width: 34px; }
-.nurturing-tracks else {
-  background: url("images/mail-icon.png") no-repeat;
-  content: "";
-  height: 23px;
-  width: 34px; }
 
 .mobile-demand-generation:before {
-  background: url("images/calculator-icon.png") no-repeat;
-  content: "";
-  height: 29px;
-  width: 22px; }
-.mobile-demand-generation else {
   background: url("images/calculator-icon.png") no-repeat;
   content: "";
   height: 29px;
@@ -207,18 +239,8 @@ small {
   content: "";
   height: 30px;
   width: 31px; }
-.full-system-auditing else {
-  background: url("images/magnifying-glass-icon.png") no-repeat;
-  content: "";
-  height: 30px;
-  width: 31px; }
 
 .creative-and-dev:before {
-  background: url("images/pen-icon.png") no-repeat;
-  content: "";
-  height: 31px;
-  width: 32px; }
-.creative-and-dev else {
   background: url("images/pen-icon.png") no-repeat;
   content: "";
   height: 31px;
@@ -229,63 +251,88 @@ small {
   content: "";
   height: 29px;
   width: 34px; }
-.target-personas else {
-  background: url("images/persona-icon.png") no-repeat;
-  content: "";
-  height: 29px;
-  width: 34px; }
+
+.m-client-logo {
+  margin-top: 1.25em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em; }
+
+.m-client-logo-icon {
+  padding-right: 10px; }
+  .m-client-logo-icon:last-of-type {
+    padding-right: 0; }
+
+.seagate {
+  background: url("images/seagate.png") no-repeat;
+  height: 35px;
+  width: 64px; }
+
+.fluke {
+  background: url("images/fluke.png") no-repeat;
+  height: 35px;
+  width: 64px; }
+
+.ipass {
+  background: url("images/ipass.png") no-repeat;
+  height: 35px;
+  width: 26px; }
+
+.nimbus {
+  background: url("images/nimbus.png") no-repeat;
+  height: 35px;
+  width: 44px; }
+
+.fortrust {
+  background: url("images/fortrust.png") no-repeat;
+  height: 35px;
+  width: 85px; }
+
+.webtrends {
+  background: url("images/webtrends.png") no-repeat;
+  height: 35px;
+  width: 64px; }
 
 .m-footer-social {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  *zoom: 1; }
-  .m-footer-social li {
-    list-style-image: none;
-    list-style-type: none;
-    margin-left: 0;
-    display: -moz-inline-stack;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    zoom: 1;
-    *display: inline;
-    white-space: nowrap; }
+  background: #444b4d;
+  border-top: 1px solid #463e3f;
+  border-bottom: 1px solid #a2a5a6;
+  display: block; }
 
 .m-footer-social-icon {
-  height: 26px;
-  width: 25px; }
+  margin-top: 0.3125em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.3125em;
+  height: 25px;
+  width: 26px;
+  padding-right: 10px; }
   .m-footer-social-icon a {
-    font: 0/0 serif;
-    text-shadow: none;
-    color: transparent; }
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left; }
+  .m-footer-social-icon:last-of-type {
+    padding-right: 0; }
 
 .twitter {
-  display: inline-block; }
-  .twitter else {
-    background: url("images/twitter.png") no-repeat;
-    content: "";
-    height: 26px;
-    width: 25px; }
+  display: inline-block;
+  background: url("images/twitter.png") no-repeat;
+  height: 25px;
+  width: 26px; }
 
 .facebook {
-  display: inline-block; }
-  .facebook else {
-    background: url("images/facebook.png") no-repeat;
-    content: "";
-    height: 26px;
-    width: 25px; }
+  display: inline-block;
+  background: url("images/facebook.png") no-repeat;
+  height: 25px;
+  width: 26px; }
 
 .google {
-  display: inline-block; }
-  .google else {
-    background: url("images/google.png") no-repeat;
-    content: "";
-    height: 26px;
-    width: 25px; }
+  display: inline-block;
+  background: url("images/google.png") no-repeat;
+  height: 25px;
+  width: 26px; }
 
-@media (min-width: 11em) {
+@media (min-width: 19em) {
   .l-section-one,
   .l-section-two,
   .l-footer, .input-submit {
@@ -301,11 +348,11 @@ small {
     padding-left: 1em; }
 
   .l-wrapper {
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(18.18182%, rgba(100, 100, 225, 0.25)), color-stop(18.18182%, rgba(0, 0, 0, 0)), color-stop(27.27273%, rgba(0, 0, 0, 0)), color-stop(27.27273%, rgba(100, 100, 225, 0.25)), color-stop(45.45455%, rgba(100, 100, 225, 0.25)), color-stop(45.45455%, rgba(0, 0, 0, 0)), color-stop(54.54545%, rgba(0, 0, 0, 0)), color-stop(54.54545%, rgba(100, 100, 225, 0.25)), color-stop(72.72727%, rgba(100, 100, 225, 0.25)), color-stop(72.72727%, rgba(0, 0, 0, 0)), color-stop(81.81818%, rgba(0, 0, 0, 0)), color-stop(81.81818%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 18.18182%, rgba(0, 0, 0, 0) 18.18182%, rgba(0, 0, 0, 0) 27.27273%, rgba(100, 100, 225, 0.25) 27.27273%, rgba(100, 100, 225, 0.25) 45.45455%, rgba(0, 0, 0, 0) 45.45455%, rgba(0, 0, 0, 0) 54.54545%, rgba(100, 100, 225, 0.25) 54.54545%, rgba(100, 100, 225, 0.25) 72.72727%, rgba(0, 0, 0, 0) 72.72727%, rgba(0, 0, 0, 0) 81.81818%, rgba(100, 100, 225, 0.25) 81.81818%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 18.18182%, rgba(0, 0, 0, 0) 18.18182%, rgba(0, 0, 0, 0) 27.27273%, rgba(100, 100, 225, 0.25) 27.27273%, rgba(100, 100, 225, 0.25) 45.45455%, rgba(0, 0, 0, 0) 45.45455%, rgba(0, 0, 0, 0) 54.54545%, rgba(100, 100, 225, 0.25) 54.54545%, rgba(100, 100, 225, 0.25) 72.72727%, rgba(0, 0, 0, 0) 72.72727%, rgba(0, 0, 0, 0) 81.81818%, rgba(100, 100, 225, 0.25) 81.81818%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 18.18182%, rgba(0, 0, 0, 0) 18.18182%, rgba(0, 0, 0, 0) 27.27273%, rgba(100, 100, 225, 0.25) 27.27273%, rgba(100, 100, 225, 0.25) 45.45455%, rgba(0, 0, 0, 0) 45.45455%, rgba(0, 0, 0, 0) 54.54545%, rgba(100, 100, 225, 0.25) 54.54545%, rgba(100, 100, 225, 0.25) 72.72727%, rgba(0, 0, 0, 0) 72.72727%, rgba(0, 0, 0, 0) 81.81818%, rgba(100, 100, 225, 0.25) 81.81818%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 18.18182%, rgba(0, 0, 0, 0) 18.18182%, rgba(0, 0, 0, 0) 27.27273%, rgba(100, 100, 225, 0.25) 27.27273%, rgba(100, 100, 225, 0.25) 45.45455%, rgba(0, 0, 0, 0) 45.45455%, rgba(0, 0, 0, 0) 54.54545%, rgba(100, 100, 225, 0.25) 54.54545%, rgba(100, 100, 225, 0.25) 72.72727%, rgba(0, 0, 0, 0) 72.72727%, rgba(0, 0, 0, 0) 81.81818%, rgba(100, 100, 225, 0.25) 81.81818%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(21.05263%, rgba(100, 100, 225, 0.25)), color-stop(21.05263%, rgba(0, 0, 0, 0)), color-stop(26.31579%, rgba(0, 0, 0, 0)), color-stop(26.31579%, rgba(100, 100, 225, 0.25)), color-stop(47.36842%, rgba(100, 100, 225, 0.25)), color-stop(47.36842%, rgba(0, 0, 0, 0)), color-stop(52.63158%, rgba(0, 0, 0, 0)), color-stop(52.63158%, rgba(100, 100, 225, 0.25)), color-stop(73.68421%, rgba(100, 100, 225, 0.25)), color-stop(73.68421%, rgba(0, 0, 0, 0)), color-stop(78.94737%, rgba(0, 0, 0, 0)), color-stop(78.94737%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
     background-position: left top;
     -webkit-background-origin: content;
     -moz-background-origin: content;
@@ -314,13 +361,7 @@ small {
     background-origin: content-box;
     -webkit-background-clip: content-box;
     -moz-background-clip: content-box;
-    background-clip: content-box;
-    width: 100%;
-    float: left;
-    margin-right: 9.09091%; }
-    .l-wrapper:before {
-      content: "Break A";
-      color: #000; }
+    background-clip: content-box; }
 
   .l-header {
     -webkit-box-sizing: border-box;
@@ -343,4 +384,80 @@ small {
     width: 100%; }
 
   .m-section-hero {
-    height: 60px; } }
+    height: 60px; }
+
+  .m-section-hero {
+    -webkit-transition: height ease-in-out, 1s;
+    -webkit-transition-delay: 0.25s, 0s;
+    -moz-transition: height ease-in-out 0.25s, 1s;
+    -o-transition: height ease-in-out 0.25s, 1s;
+    transition: height ease-in-out 0.25s, 1s; } }
+@media (min-width: 79em) {
+  .l-wrapper {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(5.06329%, rgba(100, 100, 225, 0.25)), color-stop(5.06329%, rgba(0, 0, 0, 0)), color-stop(6.32911%, rgba(0, 0, 0, 0)), color-stop(6.32911%, rgba(100, 100, 225, 0.25)), color-stop(11.39241%, rgba(100, 100, 225, 0.25)), color-stop(11.39241%, rgba(0, 0, 0, 0)), color-stop(12.65823%, rgba(0, 0, 0, 0)), color-stop(12.65823%, rgba(100, 100, 225, 0.25)), color-stop(17.72152%, rgba(100, 100, 225, 0.25)), color-stop(17.72152%, rgba(0, 0, 0, 0)), color-stop(18.98734%, rgba(0, 0, 0, 0)), color-stop(18.98734%, rgba(100, 100, 225, 0.25)), color-stop(24.05063%, rgba(100, 100, 225, 0.25)), color-stop(24.05063%, rgba(0, 0, 0, 0)), color-stop(25.31646%, rgba(0, 0, 0, 0)), color-stop(25.31646%, rgba(100, 100, 225, 0.25)), color-stop(30.37975%, rgba(100, 100, 225, 0.25)), color-stop(30.37975%, rgba(0, 0, 0, 0)), color-stop(31.64557%, rgba(0, 0, 0, 0)), color-stop(31.64557%, rgba(100, 100, 225, 0.25)), color-stop(36.70886%, rgba(100, 100, 225, 0.25)), color-stop(36.70886%, rgba(0, 0, 0, 0)), color-stop(37.97468%, rgba(0, 0, 0, 0)), color-stop(37.97468%, rgba(100, 100, 225, 0.25)), color-stop(43.03797%, rgba(100, 100, 225, 0.25)), color-stop(43.03797%, rgba(0, 0, 0, 0)), color-stop(44.3038%, rgba(0, 0, 0, 0)), color-stop(44.3038%, rgba(100, 100, 225, 0.25)), color-stop(49.36709%, rgba(100, 100, 225, 0.25)), color-stop(49.36709%, rgba(0, 0, 0, 0)), color-stop(50.63291%, rgba(0, 0, 0, 0)), color-stop(50.63291%, rgba(100, 100, 225, 0.25)), color-stop(55.6962%, rgba(100, 100, 225, 0.25)), color-stop(55.6962%, rgba(0, 0, 0, 0)), color-stop(56.96203%, rgba(0, 0, 0, 0)), color-stop(56.96203%, rgba(100, 100, 225, 0.25)), color-stop(62.02532%, rgba(100, 100, 225, 0.25)), color-stop(62.02532%, rgba(0, 0, 0, 0)), color-stop(63.29114%, rgba(0, 0, 0, 0)), color-stop(63.29114%, rgba(100, 100, 225, 0.25)), color-stop(68.35443%, rgba(100, 100, 225, 0.25)), color-stop(68.35443%, rgba(0, 0, 0, 0)), color-stop(69.62025%, rgba(0, 0, 0, 0)), color-stop(69.62025%, rgba(100, 100, 225, 0.25)), color-stop(74.68354%, rgba(100, 100, 225, 0.25)), color-stop(74.68354%, rgba(0, 0, 0, 0)), color-stop(75.94937%, rgba(0, 0, 0, 0)), color-stop(75.94937%, rgba(100, 100, 225, 0.25)), color-stop(81.01266%, rgba(100, 100, 225, 0.25)), color-stop(81.01266%, rgba(0, 0, 0, 0)), color-stop(82.27848%, rgba(0, 0, 0, 0)), color-stop(82.27848%, rgba(100, 100, 225, 0.25)), color-stop(87.34177%, rgba(100, 100, 225, 0.25)), color-stop(87.34177%, rgba(0, 0, 0, 0)), color-stop(88.60759%, rgba(0, 0, 0, 0)), color-stop(88.60759%, rgba(100, 100, 225, 0.25)), color-stop(93.67089%, rgba(100, 100, 225, 0.25)), color-stop(93.67089%, rgba(0, 0, 0, 0)), color-stop(94.93671%, rgba(0, 0, 0, 0)), color-stop(94.93671%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 5.06329%, rgba(0, 0, 0, 0) 5.06329%, rgba(0, 0, 0, 0) 6.32911%, rgba(100, 100, 225, 0.25) 6.32911%, rgba(100, 100, 225, 0.25) 11.39241%, rgba(0, 0, 0, 0) 11.39241%, rgba(0, 0, 0, 0) 12.65823%, rgba(100, 100, 225, 0.25) 12.65823%, rgba(100, 100, 225, 0.25) 17.72152%, rgba(0, 0, 0, 0) 17.72152%, rgba(0, 0, 0, 0) 18.98734%, rgba(100, 100, 225, 0.25) 18.98734%, rgba(100, 100, 225, 0.25) 24.05063%, rgba(0, 0, 0, 0) 24.05063%, rgba(0, 0, 0, 0) 25.31646%, rgba(100, 100, 225, 0.25) 25.31646%, rgba(100, 100, 225, 0.25) 30.37975%, rgba(0, 0, 0, 0) 30.37975%, rgba(0, 0, 0, 0) 31.64557%, rgba(100, 100, 225, 0.25) 31.64557%, rgba(100, 100, 225, 0.25) 36.70886%, rgba(0, 0, 0, 0) 36.70886%, rgba(0, 0, 0, 0) 37.97468%, rgba(100, 100, 225, 0.25) 37.97468%, rgba(100, 100, 225, 0.25) 43.03797%, rgba(0, 0, 0, 0) 43.03797%, rgba(0, 0, 0, 0) 44.3038%, rgba(100, 100, 225, 0.25) 44.3038%, rgba(100, 100, 225, 0.25) 49.36709%, rgba(0, 0, 0, 0) 49.36709%, rgba(0, 0, 0, 0) 50.63291%, rgba(100, 100, 225, 0.25) 50.63291%, rgba(100, 100, 225, 0.25) 55.6962%, rgba(0, 0, 0, 0) 55.6962%, rgba(0, 0, 0, 0) 56.96203%, rgba(100, 100, 225, 0.25) 56.96203%, rgba(100, 100, 225, 0.25) 62.02532%, rgba(0, 0, 0, 0) 62.02532%, rgba(0, 0, 0, 0) 63.29114%, rgba(100, 100, 225, 0.25) 63.29114%, rgba(100, 100, 225, 0.25) 68.35443%, rgba(0, 0, 0, 0) 68.35443%, rgba(0, 0, 0, 0) 69.62025%, rgba(100, 100, 225, 0.25) 69.62025%, rgba(100, 100, 225, 0.25) 74.68354%, rgba(0, 0, 0, 0) 74.68354%, rgba(0, 0, 0, 0) 75.94937%, rgba(100, 100, 225, 0.25) 75.94937%, rgba(100, 100, 225, 0.25) 81.01266%, rgba(0, 0, 0, 0) 81.01266%, rgba(0, 0, 0, 0) 82.27848%, rgba(100, 100, 225, 0.25) 82.27848%, rgba(100, 100, 225, 0.25) 87.34177%, rgba(0, 0, 0, 0) 87.34177%, rgba(0, 0, 0, 0) 88.60759%, rgba(100, 100, 225, 0.25) 88.60759%, rgba(100, 100, 225, 0.25) 93.67089%, rgba(0, 0, 0, 0) 93.67089%, rgba(0, 0, 0, 0) 94.93671%, rgba(100, 100, 225, 0.25) 94.93671%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 5.06329%, rgba(0, 0, 0, 0) 5.06329%, rgba(0, 0, 0, 0) 6.32911%, rgba(100, 100, 225, 0.25) 6.32911%, rgba(100, 100, 225, 0.25) 11.39241%, rgba(0, 0, 0, 0) 11.39241%, rgba(0, 0, 0, 0) 12.65823%, rgba(100, 100, 225, 0.25) 12.65823%, rgba(100, 100, 225, 0.25) 17.72152%, rgba(0, 0, 0, 0) 17.72152%, rgba(0, 0, 0, 0) 18.98734%, rgba(100, 100, 225, 0.25) 18.98734%, rgba(100, 100, 225, 0.25) 24.05063%, rgba(0, 0, 0, 0) 24.05063%, rgba(0, 0, 0, 0) 25.31646%, rgba(100, 100, 225, 0.25) 25.31646%, rgba(100, 100, 225, 0.25) 30.37975%, rgba(0, 0, 0, 0) 30.37975%, rgba(0, 0, 0, 0) 31.64557%, rgba(100, 100, 225, 0.25) 31.64557%, rgba(100, 100, 225, 0.25) 36.70886%, rgba(0, 0, 0, 0) 36.70886%, rgba(0, 0, 0, 0) 37.97468%, rgba(100, 100, 225, 0.25) 37.97468%, rgba(100, 100, 225, 0.25) 43.03797%, rgba(0, 0, 0, 0) 43.03797%, rgba(0, 0, 0, 0) 44.3038%, rgba(100, 100, 225, 0.25) 44.3038%, rgba(100, 100, 225, 0.25) 49.36709%, rgba(0, 0, 0, 0) 49.36709%, rgba(0, 0, 0, 0) 50.63291%, rgba(100, 100, 225, 0.25) 50.63291%, rgba(100, 100, 225, 0.25) 55.6962%, rgba(0, 0, 0, 0) 55.6962%, rgba(0, 0, 0, 0) 56.96203%, rgba(100, 100, 225, 0.25) 56.96203%, rgba(100, 100, 225, 0.25) 62.02532%, rgba(0, 0, 0, 0) 62.02532%, rgba(0, 0, 0, 0) 63.29114%, rgba(100, 100, 225, 0.25) 63.29114%, rgba(100, 100, 225, 0.25) 68.35443%, rgba(0, 0, 0, 0) 68.35443%, rgba(0, 0, 0, 0) 69.62025%, rgba(100, 100, 225, 0.25) 69.62025%, rgba(100, 100, 225, 0.25) 74.68354%, rgba(0, 0, 0, 0) 74.68354%, rgba(0, 0, 0, 0) 75.94937%, rgba(100, 100, 225, 0.25) 75.94937%, rgba(100, 100, 225, 0.25) 81.01266%, rgba(0, 0, 0, 0) 81.01266%, rgba(0, 0, 0, 0) 82.27848%, rgba(100, 100, 225, 0.25) 82.27848%, rgba(100, 100, 225, 0.25) 87.34177%, rgba(0, 0, 0, 0) 87.34177%, rgba(0, 0, 0, 0) 88.60759%, rgba(100, 100, 225, 0.25) 88.60759%, rgba(100, 100, 225, 0.25) 93.67089%, rgba(0, 0, 0, 0) 93.67089%, rgba(0, 0, 0, 0) 94.93671%, rgba(100, 100, 225, 0.25) 94.93671%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 5.06329%, rgba(0, 0, 0, 0) 5.06329%, rgba(0, 0, 0, 0) 6.32911%, rgba(100, 100, 225, 0.25) 6.32911%, rgba(100, 100, 225, 0.25) 11.39241%, rgba(0, 0, 0, 0) 11.39241%, rgba(0, 0, 0, 0) 12.65823%, rgba(100, 100, 225, 0.25) 12.65823%, rgba(100, 100, 225, 0.25) 17.72152%, rgba(0, 0, 0, 0) 17.72152%, rgba(0, 0, 0, 0) 18.98734%, rgba(100, 100, 225, 0.25) 18.98734%, rgba(100, 100, 225, 0.25) 24.05063%, rgba(0, 0, 0, 0) 24.05063%, rgba(0, 0, 0, 0) 25.31646%, rgba(100, 100, 225, 0.25) 25.31646%, rgba(100, 100, 225, 0.25) 30.37975%, rgba(0, 0, 0, 0) 30.37975%, rgba(0, 0, 0, 0) 31.64557%, rgba(100, 100, 225, 0.25) 31.64557%, rgba(100, 100, 225, 0.25) 36.70886%, rgba(0, 0, 0, 0) 36.70886%, rgba(0, 0, 0, 0) 37.97468%, rgba(100, 100, 225, 0.25) 37.97468%, rgba(100, 100, 225, 0.25) 43.03797%, rgba(0, 0, 0, 0) 43.03797%, rgba(0, 0, 0, 0) 44.3038%, rgba(100, 100, 225, 0.25) 44.3038%, rgba(100, 100, 225, 0.25) 49.36709%, rgba(0, 0, 0, 0) 49.36709%, rgba(0, 0, 0, 0) 50.63291%, rgba(100, 100, 225, 0.25) 50.63291%, rgba(100, 100, 225, 0.25) 55.6962%, rgba(0, 0, 0, 0) 55.6962%, rgba(0, 0, 0, 0) 56.96203%, rgba(100, 100, 225, 0.25) 56.96203%, rgba(100, 100, 225, 0.25) 62.02532%, rgba(0, 0, 0, 0) 62.02532%, rgba(0, 0, 0, 0) 63.29114%, rgba(100, 100, 225, 0.25) 63.29114%, rgba(100, 100, 225, 0.25) 68.35443%, rgba(0, 0, 0, 0) 68.35443%, rgba(0, 0, 0, 0) 69.62025%, rgba(100, 100, 225, 0.25) 69.62025%, rgba(100, 100, 225, 0.25) 74.68354%, rgba(0, 0, 0, 0) 74.68354%, rgba(0, 0, 0, 0) 75.94937%, rgba(100, 100, 225, 0.25) 75.94937%, rgba(100, 100, 225, 0.25) 81.01266%, rgba(0, 0, 0, 0) 81.01266%, rgba(0, 0, 0, 0) 82.27848%, rgba(100, 100, 225, 0.25) 82.27848%, rgba(100, 100, 225, 0.25) 87.34177%, rgba(0, 0, 0, 0) 87.34177%, rgba(0, 0, 0, 0) 88.60759%, rgba(100, 100, 225, 0.25) 88.60759%, rgba(100, 100, 225, 0.25) 93.67089%, rgba(0, 0, 0, 0) 93.67089%, rgba(0, 0, 0, 0) 94.93671%, rgba(100, 100, 225, 0.25) 94.93671%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 5.06329%, rgba(0, 0, 0, 0) 5.06329%, rgba(0, 0, 0, 0) 6.32911%, rgba(100, 100, 225, 0.25) 6.32911%, rgba(100, 100, 225, 0.25) 11.39241%, rgba(0, 0, 0, 0) 11.39241%, rgba(0, 0, 0, 0) 12.65823%, rgba(100, 100, 225, 0.25) 12.65823%, rgba(100, 100, 225, 0.25) 17.72152%, rgba(0, 0, 0, 0) 17.72152%, rgba(0, 0, 0, 0) 18.98734%, rgba(100, 100, 225, 0.25) 18.98734%, rgba(100, 100, 225, 0.25) 24.05063%, rgba(0, 0, 0, 0) 24.05063%, rgba(0, 0, 0, 0) 25.31646%, rgba(100, 100, 225, 0.25) 25.31646%, rgba(100, 100, 225, 0.25) 30.37975%, rgba(0, 0, 0, 0) 30.37975%, rgba(0, 0, 0, 0) 31.64557%, rgba(100, 100, 225, 0.25) 31.64557%, rgba(100, 100, 225, 0.25) 36.70886%, rgba(0, 0, 0, 0) 36.70886%, rgba(0, 0, 0, 0) 37.97468%, rgba(100, 100, 225, 0.25) 37.97468%, rgba(100, 100, 225, 0.25) 43.03797%, rgba(0, 0, 0, 0) 43.03797%, rgba(0, 0, 0, 0) 44.3038%, rgba(100, 100, 225, 0.25) 44.3038%, rgba(100, 100, 225, 0.25) 49.36709%, rgba(0, 0, 0, 0) 49.36709%, rgba(0, 0, 0, 0) 50.63291%, rgba(100, 100, 225, 0.25) 50.63291%, rgba(100, 100, 225, 0.25) 55.6962%, rgba(0, 0, 0, 0) 55.6962%, rgba(0, 0, 0, 0) 56.96203%, rgba(100, 100, 225, 0.25) 56.96203%, rgba(100, 100, 225, 0.25) 62.02532%, rgba(0, 0, 0, 0) 62.02532%, rgba(0, 0, 0, 0) 63.29114%, rgba(100, 100, 225, 0.25) 63.29114%, rgba(100, 100, 225, 0.25) 68.35443%, rgba(0, 0, 0, 0) 68.35443%, rgba(0, 0, 0, 0) 69.62025%, rgba(100, 100, 225, 0.25) 69.62025%, rgba(100, 100, 225, 0.25) 74.68354%, rgba(0, 0, 0, 0) 74.68354%, rgba(0, 0, 0, 0) 75.94937%, rgba(100, 100, 225, 0.25) 75.94937%, rgba(100, 100, 225, 0.25) 81.01266%, rgba(0, 0, 0, 0) 81.01266%, rgba(0, 0, 0, 0) 82.27848%, rgba(100, 100, 225, 0.25) 82.27848%, rgba(100, 100, 225, 0.25) 87.34177%, rgba(0, 0, 0, 0) 87.34177%, rgba(0, 0, 0, 0) 88.60759%, rgba(100, 100, 225, 0.25) 88.60759%, rgba(100, 100, 225, 0.25) 93.67089%, rgba(0, 0, 0, 0) 93.67089%, rgba(0, 0, 0, 0) 94.93671%, rgba(100, 100, 225, 0.25) 94.93671%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box; }
+
+  .l-header {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 0em;
+    padding-top: 1.25em;
+    padding-bottom: 6.25em;
+    margin-bottom: 0em;
+    width: 100%;
+    float: left;
+    margin-right: 1.26582%;
+    overflow: hidden;
+    padding-right: 0;
+    padding-left: 0; }
+
+  .l-wrapper,
+  .l-header,
+  .l-section-one,
+  .l-section-two,
+  .m-logo-bar {
+    overflow: hidden;
+    position: relative;
+    z-index: 0; }
+
+  .m-mobile-optimized {
+    background: url("images/mobile-optimized.png") no-repeat;
+    height: 68px;
+    width: 157px;
+    display: block;
+    float: right;
+    margin-bottom: -68px;
+    position: relative;
+    z-index: 1; }
+
+  .main-header {
+    background: url("images/desktop-header.png") no-repeat;
+    background-position: center center;
+    background-size: 508px 221px;
+    display: inline-block;
+    float: left;
+    height: 221px;
+    width: 508px;
+    margin-left: 18.98734%; }
+
+  .m-subhead,
+  .m-form {
+    width: 36.70886%;
+    float: left;
+    margin-right: 1.26582%; }
+
+  .m-section-hero {
+    height: 120px; } }
