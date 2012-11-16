@@ -37,6 +37,8 @@ $container-style: static;
 // Module
 // --------------------------------------------------------------------------
 
+.m-main-header { @include rhythm($trailer: .5); }
+
 .m-headline-image,
 .m-headline,
 .m-main-subhead,
