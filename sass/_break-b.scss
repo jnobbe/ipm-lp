@@ -8,11 +8,12 @@ $container-style: magic;
 
 .l-wrapper {
     // @include susy-grid-background;
-    max-width: ($break-b * $column-width) + ($break-b - 1 * $gutter-width);
+    max-width: (24 * $column-width) + (23 * $gutter-width);
     // &:before { content: "Break B"; color: #000;}
 }
 
 .l-header {
+    background-size: 80%;
     @include box-sizing(border-box);
     @include rhythm($padding-leader: 4, $padding-trailer: 10);
     @include span-columns($break-b, $break-b);
@@ -28,10 +29,11 @@ $container-style: magic;
     @extend %section-rhythm;
 }
 
+.l-header,
 .l-section-one,
 .l-section-two {
-    @include prefix(5);
-    @include suffix(2);
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .l-section-one { margin-top: -201px; }
@@ -47,11 +49,6 @@ $container-style: magic;
     overflow: hidden;
     position: relative;
     z-index: 0;
-}
-
-.l-footer {
-    @include prefix(2);
-    @include suffix(2);
 }
 
 // --------------------------------------------------------------------------
@@ -77,7 +74,7 @@ $container-style: magic;
     background-position: center center;
     display: block;
     float: none;
-    @include pre(2);
+    @include pre(3);
     position: relative;
     top: -2em;
     z-index: 1;
@@ -97,22 +94,23 @@ $container-style: magic;
     z-index: 1;
 }
 
-.main-header {
+.m-main-header {
     background: url("images/desktop-header.png") no-repeat;
-    background-position: center center;
-    background-size: 508px 221px;
+    background-position: left center;
+    background-size: contain;
     display: inline-block;
     float: left;
+    margin-bottom: 0;
     height: 221px;
     width: 508px;
-    @include pre(2);
+    @include span-columns(5);
+    @include pre(3);
 }
 
 .m-main-subhead,
 .m-form {
-    @include span-columns(4, $break-b);
-    @include pre(1);
-    @include post(1);
+    @include span-columns(3, $break-b);
+    @include post(5);
 }
 
 .m-main-subhead {
@@ -120,8 +118,9 @@ $container-style: magic;
 }
 
 .m-headline {
-    @include span-columns(5, 9);
-    @include post(4);
+    @include span-columns(5, $break-b);
+    @include pre(5);
+    @include post(6);
 }
 
 .m-section-hero {
@@ -129,14 +128,18 @@ $container-style: magic;
     height: 120px;
 }
 
-.m-services-list { padding: 0; }
+.m-services-list {
+    @include span-columns(9, $break-b);
+    @include pre(5);
+    padding: 0;
+}
 
 .m-services-list-item {
     @include rhythm($trailer: 1);
+    @include span-columns(2, 9);
     float: left;
     padding-right: 2em;
     min-height: 250px;
-    width: 200px;
     &:before {
         display: inline-block;
         margin-top: 0;
@@ -158,6 +161,38 @@ $container-style: magic;
     .creative-and-dev { @include icon(before, "images/responsive-desktop.png", 175px, 197px, center, center); }
     .target-personas { @include icon(before, "images/persona-icon-desktop.png", 175px, 164px, center, center); }
 
+.m-headline-image,
+.m-section-hero {
+    @include span-columns(11);
+    @include pre(5);
+}
+
+.m-subhead,
+.m-section-copy,
+.m-client-logo {
+    @include span-columns(5);
+    @include pre(5);
+    @include post(6);
+}
+
 .m-client-logo { text-align: left; }
+    .seagate,
+    .fluke,
+    .ipass,
+    .nimbus,
+    .fortrust,
+    .webtrends { height: 46px; }
+    .seagate { width: 92px; }
+    .fluke { width: 92px; }
+    .ipass { width: 37px; }
+    .nimbus { width: 64px; }
+    .fortrust { width: 123px; }
+    .webtrends { width: 92px; }
+
+.m-footer-copy {
+    @include span-columns(8);
+    @include pre(3);
+    @include post(5);
+}
 
 }

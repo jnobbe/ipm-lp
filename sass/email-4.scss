@@ -3,7 +3,7 @@
 // --------------------------------------------------------------------------
 
 @import "config";
-@import "colors-1";
+@import "colors-4";
 
 // --------------------------------------------------------------------------
 // Base element styles
@@ -74,7 +74,7 @@ small {
 .l-wrapper { margin: 0 auto; }
 
 .l-header {
-    background: url(images/hero-1.jpg) no-repeat $ip-mid-blue;
+    background: url(images/hero-4.jpg) no-repeat $header;
     background-position: bottom center;
     background-size: 100%;
     border-top: 1px solid $ip-dark-grey;
@@ -174,7 +174,7 @@ small {
     background: url("images/ipm-logo.png") no-repeat $header;
     background-position: center center;
     background-size: 124px 14px;
-    border-bottom: 1px solid #ada5a7;
+    border-bottom: 1px solid $header;
     display: block;
     height: 2em;
     width: 100%;

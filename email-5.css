@@ -1,6 +1,6 @@
 html,
 body {
-  background: #eaeff2;
+  background: #e3e8eb;
   font-family: "ff-milo-web", tahoma, arial, sans-serif;
   font-style: normal;
   font-weight: 400; }
@@ -47,19 +47,19 @@ small {
   margin: 0 auto; }
 
 .l-header {
-  background: url(images/hero-1.jpg) no-repeat #95afb5;
+  background: url(images/hero-5.jpg) no-repeat #476871;
   background-position: bottom center;
   background-size: 100%;
   border-top: 1px solid #463e3f;
   color: #fff; }
 
 .l-section-one {
-  background: #eaeff2;
+  background: #e3e8eb;
   color: #483131; }
 
 .l-section-two {
   background: #95afb5;
-  border-bottom: 1px solid #a2a5a6;
+  border-bottom: 1px solid #edf2f5;
   color: #fff; }
 
 .l-footer {
@@ -139,10 +139,10 @@ small {
   transition: height ease-in-out 0.25s, 1s; }
 
 .m-logo-bar {
-  background: url("images/ipm-logo.png") no-repeat #95afb5;
+  background: url("images/ipm-logo.png") no-repeat #476871;
   background-position: center center;
   background-size: 124px 14px;
-  border-bottom: 1px solid #ada5a7;
+  border-bottom: 1px solid #476871;
   display: block;
   height: 2em;
   width: 100%; }
@@ -318,7 +318,7 @@ small {
 .m-footer-social {
   background: #444b4d;
   border-top: 1px solid #463e3f;
-  border-bottom: 1px solid #a2a5a6;
+  border-bottom: 1px solid #edf2f5;
   display: block; }
 
 .m-footer-social-icon {
