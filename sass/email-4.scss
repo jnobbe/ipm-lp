@@ -5,79 +5,18 @@
 @import "config";
 @import "colors-4";
 
-// --------------------------------------------------------------------------
-// Base element styles
-// --------------------------------------------------------------------------
-
-// Font variations from Typekit:
-//
-// Variation | font-family    |   font-weight | font-style
-// -------------------------------------------
-// Regular      "ff-milo-web"    400                 normal
-// Italic           "ff-milo-web"    400                  italic
-// Bold            "ff-milo-web"    700                 normal
-// Bold Italic   "ff-milo-web"    700                 italic
-
 html,
-body {
-    background: $ip-light-blue;
-    font-family: "ff-milo-web", tahoma, arial, sans-serif;
-    font-style: normal; //Regular
-    font-weight: 400; //Normal
-}
-
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul { margin: 0; }
-
-strong {
-    font-style: normal;
-    font-weight: 700;
-}
-
-small {
-    @include adjust-font-size-to(12px, .75);
-    color: #fff;
-
-    a:hover,
-    a:focus,
-    a:active,
-    a:link,
-    a:visited {
-        color: #fff;
-        text-decoration: underline;
-    }
-}
-
-// --------------------------------------------------------------------------
-// Global Helpers and Anonymous Selectors
-// --------------------------------------------------------------------------
-
-.center { margin: 0 auto; }
-
-.clear { @include clearfix; }
-
-.left { float: left; }
-
-.right { float: right; }
-
+body { background: $ip-light-blue; }
 
 // --------------------------------------------------------------------------
 // Layout
 // --------------------------------------------------------------------------
 
-.l-wrapper { margin: 0 auto; }
-
 .l-header {
     background: url(images/hero-4.jpg) no-repeat $header;
+    border-top: 1px solid $ip-dark-grey;
     background-position: bottom center;
     background-size: 100%;
-    border-top: 1px solid $ip-dark-grey;
     color: #fff;
 }
 
@@ -102,218 +41,22 @@ small {
 // Module
 // --------------------------------------------------------------------------
 
-// Anonymous selectors -------------------------------------------------------
-
-%headline {
-    @include adjust-font-size-to(16px, 1);
-    font-style: normal;
-    font-weight: 700;
-}
-
-%subhead {
-    @include adjust-font-size-to(16px, .75);
-    font-style: normal;
-    font-weight: 400;
-}
-
-%copy {
-    @include adjust-font-size-to(14px, 1);
-    @include rhythm($trailer: 1);
-    font-style: normal;
-    font-weight: 400;
-    &:last-of-type { margin-bottom: 0; }
-}
-
-%legal {
-    display: block;
-    @include rhythm($trailer: 1);
-    font-style: normal;
-    font-weight: 400;
-    &:last-of-type { margin-bottom: 0; }
-}
-
-%icon-list {
-    @include inline-block-list;
-    padding-right: 10px;
-    text-align: center;
-    &:last-of-type { padding-right: 0; }
-}
-
-%hide-text { @include hide-text; }
-
-// $image-url: relative path to the asset
-// $height, $width self explanatory
-// $pseudo: before, or after. if blank then it will be on the element itself.
-@mixin icon($pseudo, $image-url, $height, $width, $vert, $horiz) {
-    @if $pseudo == "before" or $pseudo == "after" {
-        &:#{$pseudo} {
-            background: url($image-url) no-repeat;
-            background-position: $vert $horiz;
-            content: "";
-            height: $height;
-            width: $width;
-        }
-    } @else {
-        background: url($image-url) no-repeat;
-        background-position: $vert $horiz;
-        background-size: contain;
-        height: $height;
-        width: $width;
-    }
-}
-// --------------------------------------------------------------------------
-
-.red-ribbon,
-.purple-ribbon,
-.m-mobile-optimized {
-    height: 0;
-    @include single-transition(height ease-in-out .25s);
-}
-
 .m-logo-bar {
     background: url("images/ipm-logo.png") no-repeat $header;
     background-position: center center;
-    background-size: 124px 14px;
-    border-bottom: 1px solid $header;
-    display: block;
-    height: 2em;
-    width: 100%;
 }
-    .m-main-header {
-        @extend %hide-text;
-        background: url("images/mobile-header.png") no-repeat;
-        background-position: center center;
-        background-size: 268px 45px;
-        height: 45px;
-        width: 100%;
-    }
-    .our-story {
-        @extend %hide-text;
-        background: url("images/our-story.png") no-repeat;
-        background-position: left center;
-        background-size: contain;
-        height: 59px;
-        width: 100%;
-    }
 
-.m-headline { @extend %headline; }
-
-.m-main-subhead,
-.m-subhead { @extend %subhead; }
-
-.m-subhead { font-weight: 700; }
-
-.m-form { overflow: hidden; }
-    .input-submit {
-        @extend .center;
-        display: block;
-    }
     .input-text {
-        @include box-sizing(border-box);
-        border: none;
-        border-radius: 5px;
-        display: block;
-        margin: 0 auto 1em auto;
-        padding: .5em 1em;
-        width: 90%;
         &:focus {
             outline: transparent;
             @include box-shadow($ip-dark-blue 0 1px 5px 1px inset);
         }
     }
-    .appendix {}
-
-.m-section-hero {
-    @include rhythm($trailer: 1);
-    background: url("images/busts.png") no-repeat;
-    background-position: center center;
-    background-size: contain;
-    width: 100%;
-}
-
-.m-section-copy {
-    @extend %copy;
-}
-
-.m-services-list { @include no-bullets; }
-    .m-services-list-item {
-        &:before {
-            display: inline-block;
-            margin-top: -50px;
-            position: relative;
-            top: 50px;
-            left: -40px;
-        }
-    }
-    .m-services-list-item-headline { @include adjust-font-size-to(14px, 1); }
-    .m-services-list-item-copy { @include adjust-font-size-to(14px, 1); }
-    // Item bullet images
-    .digital-production { @include icon(before, "images/www-icon.png", 28px, 30px, center, center); }
-    .nurturing-tracks { @include icon(before, "images/mail-icon.png", 23px, 34px, center, center); }
-    .mobile-demand-generation {
-        @include icon(before, "images/calculator-icon.png", 29px, 22px, center, center);
-        &:before {
-            left: -35px;
-        }
-    }
-    .full-system-auditing { @include icon(before, "images/magnifying-glass-icon.png", 30px, 31px, center, center); }
-    .creative-and-dev { @include icon(before, "images/pen-icon.png", 31px, 32px, center, center); }
-    .target-personas { @include icon(before, "images/persona-icon.png", 29px, 34px, center, center); }
-
-.m-client-logo {
-    @extend %icon-list;
-    @include rhythm($leader: 1);
-}
-    .m-client-logo-icon {
-        padding-right: 10px;
-        &:last-of-type { padding-right: 0; }
-    }
-    .seagate { @include icon("", "images/seagate.png", 35px, 64px, center, center); }
-    .fluke { @include icon("", "images/fluke.png", 35px, 64px, center, center); }
-    .ipass { @include icon("", "images/ipass.png", 35px, 26px, center, center); }
-    .nimbus { @include icon("", "images/nimbus.png", 35px, 44px, center, center); }
-    .fortrust { @include icon("", "images/fortrust.png", 35px, 85px, center, center); }
-    .webtrends { @include icon("", "images/webtrends.png", 35px, 64px, center, center); }
 
 .m-footer-social {
-    @extend %icon-list;
     background: $ip-dark-blue;
     border-top: 1px solid $ip-dark-grey;
     border-bottom: 1px solid $ip-light-grey;
-    display: block;
-}
-    .m-footer-social-icon {
-        @include rhythm($leader: .25, $trailer: .25);
-        height: 25px;
-        width: 26px;
-        padding-right: 10px;
-        a { @include hide-text; }
-        &:last-of-type { padding-right: 0; }
-    }
-    // Social icons
-    .twitter {
-        display: inline-block;
-        @include icon("", "images/twitter.png", 25px, 26px, center, center);
-    }
-    .facebook {
-        display: inline-block;
-        @include icon("", "images/facebook.png", 25px, 26px, center, center);
-    }
-    .google {
-        display: inline-block;
-        @include icon("", "images/google.png", 25px, 26px, center, center);
-    }
-
-.m-footer-copy {
-    @extend %legal;
 }
 
-
-// --------------------------------------------------------------------------
-// Breakpoints
-// --------------------------------------------------------------------------
-
-// Smallest...
-@import "break-a";
-@import "break-b";
-// ...Largest
+@import "breakpoints";
