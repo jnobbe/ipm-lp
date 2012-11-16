@@ -1,19 +1,22 @@
 @include at-breakpoint($break-b) {
 
+$container-style: magic;
 
 // --------------------------------------------------------------------------
 // Layout
 // --------------------------------------------------------------------------
 
 .l-wrapper {
-    @include susy-grid-background;
+    // @include susy-grid-background;
+    max-width: ($break-b * $column-width) + ($break-b - 1 * $gutter-width);
     // &:before { content: "Break B"; color: #000;}
 }
 
 .l-header {
     @include box-sizing(border-box);
-    @include rhythm($padding-leader: 1, $padding-trailer: 5);
+    @include rhythm($padding-leader: 4, $padding-trailer: 10);
     @include span-columns($break-b, $break-b);
+    float: none;
     overflow: hidden;
     padding-right: 0;
     padding-left: 0;
@@ -23,25 +26,70 @@
 .l-section-two,
 .l-footer {
     @extend %section-rhythm;
-    @extend %section-gutter;
 }
+
+.l-section-one,
+.l-section-two {
+    @include prefix(5);
+    @include suffix(2);
+}
+
+.l-section-one { margin-top: -201px; }
+
+.l-section-two {margin-top: -204px; }
 
 .l-wrapper,
 .l-header,
 .l-section-one,
 .l-section-two,
-.m-logo-bar {
+.m-logo-bar,
+.l-footer {
     overflow: hidden;
     position: relative;
     z-index: 0;
 }
+
+.l-footer {
+    @include prefix(2);
+    @include suffix(2);
+}
+
+// --------------------------------------------------------------------------
+// Ribbons
+// --------------------------------------------------------------------------
+
+.red-ribbon {
+    background: url("images/red-ribbon.png") no-repeat;
+    background-size: 130px 202px;
+    height: 202px;
+    width: 130px;
+}
+
+.purple-ribbon {
+    background: url("images/purple-ribbon.png") no-repeat;
+    background-size: 130px 204px;
+    height: 204px;
+    width: 130px;
+}
+
+.red-ribbon,
+.purple-ribbon {
+    background-position: center center;
+    display: block;
+    float: none;
+    @include pre(2);
+    position: relative;
+    top: -2em;
+    z-index: 1;
+}
+
 
 // --------------------------------------------------------------------------
 // Module
 // --------------------------------------------------------------------------
 
 .m-mobile-optimized {
-    @include icon("", "images/mobile-optimized.png", 68px, 157px);
+    @include icon("", "images/mobile-optimized.png", 68px, 157px, center, center);
     display: block;
     float: right;
     margin-bottom: -68px;
@@ -57,14 +105,59 @@
     float: left;
     height: 221px;
     width: 508px;
-    @include pre(3);
+    @include pre(2);
 }
 
-.m-subhead,
+.m-main-subhead,
 .m-form {
-    @include span-columns(6, $break-b);
+    @include span-columns(4, $break-b);
+    @include pre(1);
+    @include post(1);
 }
 
-.m-section-hero { height: 120px; }
+.m-main-subhead {
+    @include adjust-font-size-to(24px, 1.5);
+}
+
+.m-headline {
+    @include span-columns(5, 9);
+    @include post(4);
+}
+
+.m-section-hero {
+    background-position: left center;
+    height: 120px;
+}
+
+.m-services-list { padding: 0; }
+
+.m-services-list-item {
+    @include rhythm($trailer: 1);
+    float: left;
+    padding-right: 2em;
+    min-height: 250px;
+    width: 200px;
+    &:before {
+        display: inline-block;
+        margin-top: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+    .digital-production { @include icon(before, "images/www-icon-desktop.png", 175px, 186px, center, center); }
+    .nurturing-tracks { @include icon(before, "images/map-desktop.gif", 175px, 196px, center, center); }
+    .mobile-demand-generation {
+        @include icon(before, "images/mobile-desktop.png", 175px, 144px, center, center);
+        &:before {
+            left: 0;
+        }
+    }
+    .full-system-auditing { @include icon(before, "images/system-auditing-desktop.png", 175px, 117px, center, center); }
+    .creative-and-dev { @include icon(before, "images/responsive-desktop.png", 175px, 197px, center, center); }
+    .target-personas { @include icon(before, "images/persona-icon-desktop.png", 175px, 164px, center, center); }
+
+.m-client-logo { text-align: left; }
 
 }

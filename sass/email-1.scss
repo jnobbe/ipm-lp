@@ -25,6 +25,8 @@ body {
     font-weight: 400; //Normal
 }
 
+html,
+body,
 h1,
 h2,
 h3,
@@ -110,7 +112,7 @@ small {
 %subhead {
     @include adjust-font-size-to(16px, .75);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 %copy {
@@ -139,22 +141,26 @@ small {
 // $image-url: relative path to the asset
 // $height, $width self explanatory
 // $pseudo: before, or after. if blank then it will be on the element itself.
-@mixin icon($pseudo, $image-url, $height, $width) {
+@mixin icon($pseudo, $image-url, $height, $width, $vert, $horiz) {
     @if $pseudo == "before" or $pseudo == "after" {
         &:#{$pseudo} {
             background: url($image-url) no-repeat;
+            background-position: $vert $horiz;
             content: "";
             height: $height;
             width: $width;
         }
     } @else {
         background: url($image-url) no-repeat;
+        background-position: $vert $horiz;
         height: $height;
         width: $width;
     }
 }
 // --------------------------------------------------------------------------
 
+.red-ribbon,
+.purple-ribbon,
 .m-mobile-optimized {
     height: 0;
     @include single-transition(height ease-in-out .25s);
@@ -165,6 +171,7 @@ small {
     background-position: center center;
     background-size: 124px 14px;
     border-bottom: 1px solid #ada5a7;
+    display: block;
     height: 2em;
     width: 100%;
 }
@@ -189,7 +196,10 @@ small {
 
 .m-headline { @extend %headline; }
 
+.m-main-subhead,
 .m-subhead { @extend %subhead; }
+
+.m-subhead { font-weight: 700; }
 
 .m-form { overflow: hidden; }
     .input-submit {
@@ -206,7 +216,7 @@ small {
         width: 90%;
         &:focus {
             outline: transparent;
-            // @include box-shadow(lighten($ft-blue, 25%) 0 1px 15px 1px inset);
+            @include box-shadow($ip-dark-blue 0 1px 5px 1px inset);
         }
     }
     .appendix {}
@@ -236,17 +246,17 @@ small {
     .m-services-list-item-headline { @include adjust-font-size-to(14px, 1); }
     .m-services-list-item-copy { @include adjust-font-size-to(14px, 1); }
     // Item bullet images
-    .digital-production { @include icon(before, "images/www-icon.png", 28px, 30px); }
-    .nurturing-tracks { @include icon(before, "images/mail-icon.png", 23px, 34px); }
+    .digital-production { @include icon(before, "images/www-icon.png", 28px, 30px, center, center); }
+    .nurturing-tracks { @include icon(before, "images/mail-icon.png", 23px, 34px, center, center); }
     .mobile-demand-generation {
-        @include icon(before, "images/calculator-icon.png", 29px, 22px);
+        @include icon(before, "images/calculator-icon.png", 29px, 22px, center, center);
         &:before {
             left: -35px;
         }
     }
-    .full-system-auditing { @include icon(before, "images/magnifying-glass-icon.png", 30px, 31px); }
-    .creative-and-dev { @include icon(before, "images/pen-icon.png", 31px, 32px); }
-    .target-personas { @include icon(before, "images/persona-icon.png", 29px, 34px); }
+    .full-system-auditing { @include icon(before, "images/magnifying-glass-icon.png", 30px, 31px, center, center); }
+    .creative-and-dev { @include icon(before, "images/pen-icon.png", 31px, 32px, center, center); }
+    .target-personas { @include icon(before, "images/persona-icon.png", 29px, 34px, center, center); }
 
 .m-client-logo {
     @extend %icon-list;
@@ -256,12 +266,12 @@ small {
         padding-right: 10px;
         &:last-of-type { padding-right: 0; }
     }
-    .seagate { @include icon("", "images/seagate.png", 35px, 64px); }
-    .fluke { @include icon("", "images/fluke.png", 35px, 64px); }
-    .ipass { @include icon("", "images/ipass.png", 35px, 26px); }
-    .nimbus { @include icon("", "images/nimbus.png", 35px, 44px); }
-    .fortrust { @include icon("", "images/fortrust.png", 35px, 85px); }
-    .webtrends { @include icon("", "images/webtrends.png", 35px, 64px); }
+    .seagate { @include icon("", "images/seagate.png", 35px, 64px, center, center); }
+    .fluke { @include icon("", "images/fluke.png", 35px, 64px, center, center); }
+    .ipass { @include icon("", "images/ipass.png", 35px, 26px, center, center); }
+    .nimbus { @include icon("", "images/nimbus.png", 35px, 44px, center, center); }
+    .fortrust { @include icon("", "images/fortrust.png", 35px, 85px, center, center); }
+    .webtrends { @include icon("", "images/webtrends.png", 35px, 64px, center, center); }
 
 .m-footer-social {
     @extend %icon-list;
@@ -281,15 +291,15 @@ small {
     // Social icons
     .twitter {
         display: inline-block;
-        @include icon("", "images/twitter.png", 25px, 26px);
+        @include icon("", "images/twitter.png", 25px, 26px, center, center);
     }
     .facebook {
         display: inline-block;
-        @include icon("", "images/facebook.png", 25px, 26px);
+        @include icon("", "images/facebook.png", 25px, 26px, center, center);
     }
     .google {
         display: inline-block;
-        @include icon("", "images/google.png", 25px, 26px);
+        @include icon("", "images/google.png", 25px, 26px, center, center);
     }
 
 .m-footer-copy {

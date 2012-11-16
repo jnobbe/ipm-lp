@@ -1,5 +1,7 @@
 @include at-breakpoint($break-a) {
 
+$container-style: static;
+
 %section-rhythm { @include rhythm($padding-leader: 1, $padding-trailer: 1); }
 
 %section-gutter {
@@ -13,7 +15,8 @@
 // --------------------------------------------------------------------------
 
 .l-wrapper {
-    @include susy-grid-background;
+    // @include susy-grid-background;
+    max-width: (8 * $column-width) + (7 * $gutter-width);
     // &:before { content: "Break A"; color: #000;}
 }
 
@@ -36,6 +39,7 @@
 
 .m-headline-image,
 .m-headline,
+.m-main-subhead,
 .m-subhead { @include rhythm($trailer: .5); }
 
 .input-submit { @extend %section-rhythm; }
