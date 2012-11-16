@@ -3,7 +3,7 @@
 // --------------------------------------------------------------------------
 
 @import "config";
-@import "colors-3";
+@import "colors-5";
 
 html,
 body { background: $ip-light-blue; }
@@ -13,7 +13,7 @@ body { background: $ip-light-blue; }
 // --------------------------------------------------------------------------
 
 .l-header {
-    background: url(images/hero-3.jpg) no-repeat $header;
+    background: url(images/hero-5.jpg) no-repeat $header;
     border-top: 1px solid $ip-dark-grey;
     background-position: bottom center;
     background-size: 100%;

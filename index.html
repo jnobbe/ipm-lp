@@ -30,9 +30,9 @@
             var head = document.head;
             head.appendChild(link);
         }
-
-        // console.log(stylesheet);
     </script>
+
+    <script type="text/javascript" src="js/dynamicValidator.js"></script>
 
     <!-- <link rel="stylesheet" href="email-1.css"> -->
 </head>
@@ -46,10 +46,16 @@
                 <h1 class="m-main-header">The Mobile Demand Gen Authority</h1>
                 <h2 class="m-main-subhead"><strong>End of Year Sale!</strong> 20&#37; off all new work booked from now until New Year&rsquo;s Eve.</h2>
                 <div class="m-form">
-                    <form action="">
-                        <input type="email" class="input-text" placeholder="Email">
-                        <input type="text" class="input-text" placeholder="First Name">
-                        <input type="text" class="input-text" placeholder="Last Name">
+                    <form action="" onsubmit="return (validate(this.name)) ? true : highlight();" name="eoyForm" data-reporting="all">
+                        <fieldset>
+                            <input type="email" class="input-text" placeholder="Email" name="C_EmailAddress" data-error="Please enter a valid email address" data-required="true" data-email="true">
+                        </fieldset>
+                        <fieldset>
+                            <input type="text" class="input-text" placeholder="First Name" name="C_FirstName" data-error="Please enter a first name" data-required="true" data-alpha="true">
+                        </fieldset>
+                        <fieldset>
+                            <input type="text" class="input-text" placeholder="Last Name" name="C_LastName" data-error="Please enter a last name" data-required="true" data-alpha="true">
+                        </fieldset>
                         <small class="appendix">Your privacy is important to us. View our <a href="#">Privacy Policy</a></small>
                     </form>
                 </div>
@@ -144,5 +150,6 @@
     submitButton.setAttribute('class', 'input-submit');
     form.appendChild(submitButton);
     </script>
+    <script type="text/javascript" src="js/highlighter.js"></script>
 </body>
 </html>

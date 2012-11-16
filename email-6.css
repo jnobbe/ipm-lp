@@ -1,6 +1,5 @@
 html,
 body {
-  background: #dfe3e4;
   font-family: "ff-milo-web", tahoma, arial, sans-serif;
   font-style: normal;
   font-weight: 400; }
@@ -14,6 +13,17 @@ h4,
 p,
 ul {
   margin: 0; }
+
+h5 {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.3125em; }
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0; }
 
 strong {
   font-style: normal;
@@ -43,28 +53,13 @@ small {
 .right {
   float: right; }
 
+.warn-halo {
+  -webkit-box-shadow: #990000 0 0 10px inset, 0 0 3px 0 rgba(200, 0, 0, 0.5) inset, 0 0 11px -2px rgba(180, 0, 0, 0.25) inset, 0 0 20px rgba(255, 255, 255, 0.25) inset !important;
+  -moz-box-shadow: #990000 0 0 10px inset, 0 0 3px 0 rgba(200, 0, 0, 0.5) inset, 0 0 11px -2px rgba(180, 0, 0, 0.25) inset, 0 0 20px rgba(255, 255, 255, 0.25) inset !important;
+  box-shadow: #990000 0 0 10px inset, 0 0 3px 0 rgba(200, 0, 0, 0.5) inset, 0 0 11px -2px rgba(180, 0, 0, 0.25) inset, 0 0 20px rgba(255, 255, 255, 0.25) inset !important; }
+
 .l-wrapper {
   margin: 0 auto; }
-
-.l-header {
-  background: url(images/hero-6.jpg) no-repeat #293b45;
-  background-position: bottom center;
-  background-size: 100%;
-  border-top: 1px solid #463e3f;
-  color: #fff; }
-
-.l-section-one {
-  background: #dfe3e4;
-  color: #483131; }
-
-.l-section-two {
-  background: #95afb5;
-  border-bottom: 1px solid #edf2f5;
-  color: #fff; }
-
-.l-footer {
-  background: #444b4d;
-  border-top: 1px solid #463e3f; }
 
 .m-headline {
   font-size: 1em;
@@ -139,10 +134,7 @@ small {
   transition: height ease-in-out 0.25s, 1s; }
 
 .m-logo-bar {
-  background: url("images/ipm-logo.png") no-repeat #293b45;
-  background-position: center center;
   background-size: 124px 14px;
-  border-bottom: 1px solid #293b45;
   display: block;
   height: 2em;
   width: 100%; }
@@ -180,11 +172,6 @@ small {
   margin: 0 auto 1em auto;
   padding: .5em 1em;
   width: 90%; }
-  .input-text:focus {
-    outline: transparent;
-    -webkit-box-shadow: #444b4d 0 1px 5px 1px inset;
-    -moz-box-shadow: #444b4d 0 1px 5px 1px inset;
-    box-shadow: #444b4d 0 1px 5px 1px inset; }
 
 .m-section-hero {
   margin-top: 0em;
@@ -316,9 +303,6 @@ small {
   width: 64px; }
 
 .m-footer-social {
-  background: #444b4d;
-  border-top: 1px solid #463e3f;
-  border-bottom: 1px solid #edf2f5;
   display: block; }
 
 .m-footer-social-icon {
@@ -359,6 +343,45 @@ small {
   background-size: contain;
   height: 25px;
   width: 26px; }
+
+html,
+body {
+  background: #dfe3e4; }
+
+.l-header {
+  background: url(images/hero-6.jpg) no-repeat #293b45;
+  border-top: 1px solid #463e3f;
+  background-position: bottom center;
+  background-size: 100%;
+  color: #fff; }
+
+.l-section-one {
+  background: #dfe3e4;
+  color: #483131; }
+
+.l-section-two {
+  background: #95afb5;
+  border-bottom: 1px solid #edf2f5;
+  color: #fff; }
+
+.l-footer {
+  background: #444b4d;
+  border-top: 1px solid #463e3f; }
+
+.m-logo-bar {
+  background: url("images/ipm-logo.png") no-repeat #293b45;
+  background-position: center center; }
+
+.input-text:focus {
+  outline: transparent;
+  -webkit-box-shadow: #444b4d 0 1px 5px 1px inset;
+  -moz-box-shadow: #444b4d 0 1px 5px 1px inset;
+  box-shadow: #444b4d 0 1px 5px 1px inset; }
+
+.m-footer-social {
+  background: #444b4d;
+  border-top: 1px solid #463e3f;
+  border-bottom: 1px solid #edf2f5; }
 
 @media (min-width: 19em) {
   .l-section-one,
