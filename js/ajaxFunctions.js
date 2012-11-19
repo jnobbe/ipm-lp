@@ -56,8 +56,8 @@ function createRequest() {
 function sendDataToElq() {
     var form = document.forms['EOYCampaign'];
     var postData = 'email='+form.elements['C_EmailAddress'].value;
-    postData += '&firstName='+form.elements['C_FirstName'].value;
-    postData += '&lastName='+form.elements['C_LastName'].value;
+    postData += '&firstName='+form.elements['C_First'].value;
+    postData += '&lastName='+form.elements['C_Last'].value;
     getRequest('sendDataToElq', 'http://209.177.156.227/eoy-campaign/PHP/ajaxCall.php', postData, 'text', 'application/x-www-form-urlencoded');
     return false;
 }
