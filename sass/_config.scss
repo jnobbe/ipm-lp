@@ -205,7 +205,7 @@ small {
 }
     .m-main-header {
         @extend %hide-text;
-        background: url("images/mobile-header.png") no-repeat;
+        background: url("http://209.177.156.227/eoy-campaign/images/mobile-header.png") no-repeat;
         background-position: center center;
         background-size: 268px 45px;
         height: 45px;
@@ -213,7 +213,7 @@ small {
     }
     .our-story {
         @extend %hide-text;
-        background: url("images/our-story.png") no-repeat;
+        background: url("http://209.177.156.227/eoy-campaign/images/our-story.png") no-repeat;
         background-position: left center;
         background-size: contain;
         height: 59px;
@@ -245,7 +245,7 @@ small {
 
 .m-section-hero {
     @include rhythm($trailer: 1);
-    background: url("images/busts.png") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/busts.png") no-repeat;
     background-position: center center;
     background-size: contain;
     width: 100%;
@@ -268,17 +268,17 @@ small {
     .m-services-list-item-headline { @include adjust-font-size-to(14px, 1); }
     .m-services-list-item-copy { @include adjust-font-size-to(14px, 1); }
     // Item bullet images
-    .digital-production { @include icon(before, "images/www-icon.png", 28px, 30px, center, center); }
-    .nurturing-tracks { @include icon(before, "images/mail-icon.png", 23px, 34px, center, center); }
+    .digital-production { @include icon(before, "http://209.177.156.227/eoy-campaign/images/www-icon.png", 28px, 30px, center, center); }
+    .nurturing-tracks { @include icon(before, "http://209.177.156.227/eoy-campaign/images/mail-icon.png", 23px, 34px, center, center); }
     .mobile-demand-generation {
-        @include icon(before, "images/calculator-icon.png", 29px, 22px, center, center);
+        @include icon(before, "http://209.177.156.227/eoy-campaign/images/calculator-icon.png", 29px, 22px, center, center);
         &:before {
             left: -35px;
         }
     }
-    .full-system-auditing { @include icon(before, "images/magnifying-glass-icon.png", 30px, 31px, center, center); }
-    .creative-and-dev { @include icon(before, "images/pen-icon.png", 31px, 32px, center, center); }
-    .target-personas { @include icon(before, "images/persona-icon.png", 29px, 34px, center, center); }
+    .full-system-auditing { @include icon(before, "http://209.177.156.227/eoy-campaign/images/magnifying-glass-icon.png", 30px, 31px, center, center); }
+    .creative-and-dev { @include icon(before, "http://209.177.156.227/eoy-campaign/images/pen-icon.png", 31px, 32px, center, center); }
+    .target-personas { @include icon(before, "http://209.177.156.227/eoy-campaign/images/persona-icon.png", 29px, 34px, center, center); }
 
 .m-client-logo {
     @extend %icon-list;
@@ -288,12 +288,12 @@ small {
         padding-right: 10px;
         &:last-of-type { padding-right: 0; }
     }
-    .seagate { @include icon("", "images/seagate.png", 35px, 64px, center, center); }
-    .fluke { @include icon("", "images/fluke.png", 35px, 64px, center, center); }
-    .ipass { @include icon("", "images/ipass.png", 35px, 26px, center, center); }
-    .nimbus { @include icon("", "images/nimbus.png", 35px, 44px, center, center); }
-    .fortrust { @include icon("", "images/fortrust.png", 35px, 85px, center, center); }
-    .webtrends { @include icon("", "images/webtrends.png", 35px, 64px, center, center); }
+    .seagate { @include icon("", "http://209.177.156.227/eoy-campaign/images/seagate.png", 35px, 64px, center, center); }
+    .fluke { @include icon("", "http://209.177.156.227/eoy-campaign/images/fluke.png", 35px, 64px, center, center); }
+    .ipass { @include icon("", "http://209.177.156.227/eoy-campaign/images/ipass.png", 35px, 26px, center, center); }
+    .nimbus { @include icon("", "http://209.177.156.227/eoy-campaign/images/nimbus.png", 35px, 44px, center, center); }
+    .fortrust { @include icon("", "http://209.177.156.227/eoy-campaign/images/fortrust.png", 35px, 85px, center, center); }
+    .webtrends { @include icon("", "http://209.177.156.227/eoy-campaign/images/webtrends.png", 35px, 64px, center, center); }
 
 .m-footer-social {
     @extend %icon-list;
@@ -310,17 +310,19 @@ small {
     // Social icons
     .twitter {
         display: inline-block;
-        @include icon("", "images/twitter.png", 25px, 26px, center, center);
+        @include icon("", "http://209.177.156.227/eoy-campaign/images/twitter.png", 25px, 26px, center, center);
     }
     .facebook {
         display: inline-block;
-        @include icon("", "images/facebook.png", 25px, 26px, center, center);
+        @include icon("", "http://209.177.156.227/eoy-campaign/images/facebook.png", 25px, 26px, center, center);
     }
     .google {
         display: inline-block;
-        @include icon("", "images/google.png", 25px, 26px, center, center);
+        @include icon("", "http://209.177.156.227/eoy-campaign/images/google.png", 25px, 26px, center, center);
     }
 
 .m-footer-copy {
     @extend %legal;
 }
+
+

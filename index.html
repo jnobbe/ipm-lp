@@ -20,19 +20,25 @@
         if (emailNum > 0 && emailNum<= 6) {
             var link = document.createElement('link');
             link.setAttribute('rel', 'stylesheet');
-            link.setAttribute('href', 'email-' + emailNum + '.css');
+            link.setAttribute('href', 'http://209.177.156.227/eoy-campaign/css/email-' + emailNum + '.css');
+            // --- Testing ---
+            // link.setAttribute('href', 'email-' + emailNum + '.css');
+            // -------------
             var head = document.head;
             head.appendChild(link);
         } else {
             var link = document.createElement('link');
             link.setAttribute('rel', 'stylesheet');
-            link.setAttribute('href', 'email-1.css');
+            link.setAttribute('href', 'http://209.177.156.227/eoy-campaign/css/email-1.css');
+            // --- Testing ---
+            // link.setAttribute('href', 'email-1.css');
+            // -------------
             var head = document.head;
             head.appendChild(link);
         }
     </script>
 
-    <script type="text/javascript" src="js/dynamicValidator.js"></script>
+    <script type="text/javascript" src="http://209.177.156.227/eoy-campaign/js/dynamicValidator.js"></script>
 
     <!-- <link rel="stylesheet" href="email-1.css"> -->
 </head>
@@ -56,7 +62,7 @@
                         <fieldset>
                             <input type="text" class="input-text" placeholder="Last Name" name="C_LastName" data-error="Please enter a last name" data-required="true" data-alpha="true">
                         </fieldset>
-                        <small class="appendix">Your privacy is important to us. View our <a href="#">Privacy Policy</a></small>
+                        <small class="appendix">Your privacy is important to us. View our <a href="http://ironpointmarketing.com/company/privacy-policy">Privacy Policy</a></small>
                     </form>
                 </div>
             </div>
@@ -143,13 +149,13 @@
     var submitButton = document.createElement('input');
     submitButton.setAttribute('type', 'image');
     if (emailNum)
-        submitButton.setAttribute('src', 'images/submit-' + emailNum + '.png');
+        submitButton.setAttribute('src', 'http://209.177.156.227/eoy-campaign/images/submit-' + emailNum + '.png');
     else
-        submitButton.setAttribute('src', 'images/submit-1.png');
+        submitButton.setAttribute('src', 'http://209.177.156.227/eoy-campaign/images/submit-1.png');
     submitButton.setAttribute('alt', 'Start Saving Now');
     submitButton.setAttribute('class', 'input-submit');
     form.appendChild(submitButton);
     </script>
-    <script type="text/javascript" src="js/highlighter.js"></script>
+    <script type="text/javascript" src="http://209.177.156.227/eoy-campaign/js/highlighter.js"></script>
 </body>
 </html>
