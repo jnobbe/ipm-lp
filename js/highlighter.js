@@ -1,4 +1,4 @@
-var theForm = document.forms["eoyForm"];
+var theForm = document.forms["EOYCampaign"];
 var theFormEls = theForm.elements;
 
 var theFormElsLen = theFormEls.length;
