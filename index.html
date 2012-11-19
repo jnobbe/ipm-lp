@@ -38,28 +38,6 @@
         }
     </script>
 
-<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript'><!--//
-var timerId = null, timeout = 5;
-//--></SCRIPT>
-<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript'><!--//
-function WaitUntilCustomerGUIDIsRetrieved() {
-    if (!!(timerId)) {
-        if (timeout == 0) {
-            return;
-        }
-        if (typeof this.GetElqCustomerGUID === 'function') {
-            document.forms["EOYCampaign"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
-            return;
-        }
-        timeout -= 1;
-    }
-    timerId = setTimeout("WaitUntilCustomerGUIDIsRetrieved()", 500);
-    return;
-}
-window.onload = WaitUntilCustomerGUIDIsRetrieved;
-_elqQ.push(['elqGetCustomerGUID']);
-//--></SCRIPT>
-
 <script type="text/javascript">
     var _elqQ = _elqQ || [];
     _elqQ.push(['elqSetSiteId', '3079']);
@@ -76,6 +54,32 @@ _elqQ.push(['elqGetCustomerGUID']);
     })();
 </script>
 
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript'>
+<!--//
+var timerId = null, timeout = 5;
+//-->
+</SCRIPT>
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript'>
+<!--//
+function WaitUntilCustomerGUIDIsRetrieved() {
+    if (!!(timerId)) {
+        if (timeout == 0) {
+            return;
+        }
+        if (typeof this.GetElqCustomerGUID === 'function') {
+            document.forms["EOYCampaign"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
+            return;
+        }
+        timeout -= 1;
+    }
+    timerId = setTimeout("WaitUntilCustomerGUIDIsRetrieved()", 500);
+    return;
+}
+window.onload = WaitUntilCustomerGUIDIsRetrieved;
+_elqQ.push(['elqGetCustomerGUID']);
+//-->
+</SCRIPT>
+
     <script type="text/javascript" src="http://209.177.156.227/eoy-campaign/js/dynamicValidator.js"></script>
     <script type="text/javascript" src="http://209.177.156.227/eoy-campaign/js/ajaxFunctions.js"></script>
     <!-- <link rel="stylesheet" href="email-1.css"> -->
@@ -90,6 +94,7 @@ _elqQ.push(['elqGetCustomerGUID']);
                 <h1 class="m-main-header">The Mobile Demand Gen Authority</h1>
                 <h2 class="m-main-subhead"><strong>End of Year Sale!</strong> 20&#37; off all new work booked from now until New Year&rsquo;s Eve.</h2>
                 <div class="m-form">
+                    <div id="thankYouDiv" class="hide">Thank you for your submission!</div>
                     <form action="http://s3079.t.eloqua.com/e/f2" onsubmit="return (validate(this.name)) ? sendDataToElq() : highlight();" name="EOYCampaign" data-reporting="all">
                         <input type="hidden" name="elqFormName" value="EOYCampaign">
                         <input type="hidden" name="elqSiteID" value="3079">
@@ -107,7 +112,6 @@ _elqQ.push(['elqGetCustomerGUID']);
                         </fieldset>
                         <small class="appendix">Your privacy is important to us. View our <a href="http://ironpointmarketing.com/company/privacy-policy">Privacy Policy</a></small>
                     </form>
-                    <div id="thankYouDiv">Thank you for your submission!</div>
                 </div>
             </div>
         </div>
