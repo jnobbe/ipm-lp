@@ -91,7 +91,6 @@ _elqQ.push(['elqGetCustomerGUID']);
                         </fieldset>
                         <small class="appendix">Your privacy is important to us. View our <a href="http://ironpointmarketing.com/company/privacy-policy">Privacy Policy</a></small>
                     </form>
-                    <div id="thankYouDiv" style="display: none" ><p>Thank you for your submission</div>
                 </div>
             </div>
         </div>
