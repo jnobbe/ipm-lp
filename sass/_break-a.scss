@@ -55,7 +55,7 @@ $container-style: static;
 // --------------------------------------------------------------------------
 
 .m-section-hero {
-    @include single-transition(height ease-in .25s);
+    @include single-transition(all, 1s, linear, .5s);
 }
 
 }
