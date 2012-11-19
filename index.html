@@ -60,8 +60,24 @@ window.onload = WaitUntilCustomerGUIDIsRetrieved;
 _elqQ.push(['elqGetCustomerGUID']);
 //--></SCRIPT>
 
+<script type="text/javascript">
+    var _elqQ = _elqQ || [];
+    _elqQ.push(['elqSetSiteId', '3079']);
+    _elqQ.push(['elqTrackPageView']);
+
+    (function () {
+        function async_load() {
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+            s.src = '//img.en25.com/i/elqCfg.min.js';
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        }
+        if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+        else if (window.attachEvent) window.attachEvent('onload', async_load);
+    })();
+</script>
+
     <script type="text/javascript" src="http://209.177.156.227/eoy-campaign/js/dynamicValidator.js"></script>
-    <script type="text/javascript" src="/~john/eoy-lp/js/ajaxFunctions.js"></script>
+    <script type="text/javascript" src="http://209.177.156.227/eoy-campaign/js/ajaxFunctions.js"></script>
     <!-- <link rel="stylesheet" href="email-1.css"> -->
 </head>
 <body>
@@ -81,13 +97,13 @@ _elqQ.push(['elqGetCustomerGUID']);
                         <input type="hidden" name="elqCookieWrite" value="0">
 
                         <fieldset>
-                            <input type="email" class="input-text" placeholder="Email" name="C_EmailAddress" data-error="Please enter a valid email address" data-required="true" data-email="true">
+                            <input type="email" class="input-text" placeholder="Email" name="C_EmailAddress" data-error="Please enter a valid email address" data-required="true" data-email="true" value="<eloqua type='emailfield' syntax='EmailAddress' />">
                         </fieldset>
                         <fieldset>
-                            <input type="text" class="input-text" placeholder="First Name" name="C_FirstName" data-error="Please enter a first name" data-required="true" data-alpha="true">
+                            <input type="text" class="input-text" placeholder="First Name" name="C_First" data-error="Please enter a first name" data-required="true" data-alpha="true" value="<eloqua type='emailfield' syntax='First_Name1' />">
                         </fieldset>
                         <fieldset>
-                            <input type="text" class="input-text" placeholder="Last Name" name="C_LastName" data-error="Please enter a last name" data-required="true" data-alpha="true">
+                            <input type="text" class="input-text" placeholder="Last Name" name="C_Last" data-error="Please enter a last name" data-required="true" data-alpha="true" value="<eloqua type='emailfield' syntax='LastName' />">
                         </fieldset>
                         <small class="appendix">Your privacy is important to us. View our <a href="http://ironpointmarketing.com/company/privacy-policy">Privacy Policy</a></small>
                     </form>
