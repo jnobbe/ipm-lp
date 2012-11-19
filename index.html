@@ -60,9 +60,8 @@ window.onload = WaitUntilCustomerGUIDIsRetrieved;
 _elqQ.push(['elqGetCustomerGUID']);
 //--></SCRIPT>
 
-
     <script type="text/javascript" src="http://209.177.156.227/eoy-campaign/js/dynamicValidator.js"></script>
-
+    <script type="text/javascript" src="/~john/eoy-lp/js/ajaxFunctions.js"></script>
     <!-- <link rel="stylesheet" href="email-1.css"> -->
 </head>
 <body>
@@ -75,8 +74,7 @@ _elqQ.push(['elqGetCustomerGUID']);
                 <h1 class="m-main-header">The Mobile Demand Gen Authority</h1>
                 <h2 class="m-main-subhead"><strong>End of Year Sale!</strong> 20&#37; off all new work booked from now until New Year&rsquo;s Eve.</h2>
                 <div class="m-form">
-                    <div class="hide m-thanks">Thank you!</div>
-                    <form action="http://s3079.t.eloqua.com/e/f2" onsubmit="return (validate(this.name)) ? true : highlight();" name="eoyForm" data-reporting="all">
+                    <form action="http://s3079.t.eloqua.com/e/f2" onsubmit="return (validate(this.name)) ? sendDataToElq() : highlight();" name="EOYCampaign" data-reporting="all">
                         <input type="hidden" name="elqFormName" value="EOYCampaign">
                         <input type="hidden" name="elqSiteID" value="3079">
                         <input type="hidden" name="elqCustomerGUID" value="">
@@ -93,6 +91,7 @@ _elqQ.push(['elqGetCustomerGUID']);
                         </fieldset>
                         <small class="appendix">Your privacy is important to us. View our <a href="http://ironpointmarketing.com/company/privacy-policy">Privacy Policy</a></small>
                     </form>
+                    <div id="thankYouDiv">Thank you for your submission!</div>
                 </div>
             </div>
         </div>
@@ -188,3 +187,4 @@ _elqQ.push(['elqGetCustomerGUID']);
     <script type="text/javascript" src="http://209.177.156.227/eoy-campaign/js/highlighter.js"></script>
 </body>
 </html>
+>>>>>>> IP-Dev/master
