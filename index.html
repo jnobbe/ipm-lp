@@ -38,6 +38,29 @@
         }
     </script>
 
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript'><!--//
+var timerId = null, timeout = 5;
+//--></SCRIPT>
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript'><!--//
+function WaitUntilCustomerGUIDIsRetrieved() {
+    if (!!(timerId)) {
+        if (timeout == 0) {
+            return;
+        }
+        if (typeof this.GetElqCustomerGUID === 'function') {
+            document.forms["EOYCampaign"].elements["elqCustomerGUID"].value = GetElqCustomerGUID();
+            return;
+        }
+        timeout -= 1;
+    }
+    timerId = setTimeout("WaitUntilCustomerGUIDIsRetrieved()", 500);
+    return;
+}
+window.onload = WaitUntilCustomerGUIDIsRetrieved;
+_elqQ.push(['elqGetCustomerGUID']);
+//--></SCRIPT>
+
+
     <script type="text/javascript" src="http://209.177.156.227/eoy-campaign/js/dynamicValidator.js"></script>
 
     <!-- <link rel="stylesheet" href="email-1.css"> -->
@@ -52,7 +75,12 @@
                 <h1 class="m-main-header">The Mobile Demand Gen Authority</h1>
                 <h2 class="m-main-subhead"><strong>End of Year Sale!</strong> 20&#37; off all new work booked from now until New Year&rsquo;s Eve.</h2>
                 <div class="m-form">
-                    <form action="" onsubmit="return (validate(this.name)) ? true : highlight();" name="eoyForm" data-reporting="all">
+                    <form action="http://s3079.t.eloqua.com/e/f2" onsubmit="return (validate(this.name)) ? true : highlight();" name="eoyForm" data-reporting="all">
+                        <input type="hidden" name="elqFormName" value="EOYCampaign">
+                        <input type="hidden" name="elqSiteID" value="3079">
+                        <input type="hidden" name="elqCustomerGUID" value="">
+                        <input type="hidden" name="elqCookieWrite" value="0">
+
                         <fieldset>
                             <input type="email" class="input-text" placeholder="Email" name="C_EmailAddress" data-error="Please enter a valid email address" data-required="true" data-email="true">
                         </fieldset>
