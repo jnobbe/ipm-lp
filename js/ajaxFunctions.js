@@ -54,19 +54,19 @@ function createRequest() {
  * @uses getRequest
 */
 function sendDataToElq() {
-    var form = document.forms['eoyForm'];
+    var form = document.forms['EOYCampaign'];
     var postData = 'email='+form.elements['C_EmailAddress'].value;
     postData += '&firstName='+form.elements['C_FirstName'].value;
     postData += '&lastName='+form.elements['C_LastName'].value;
-    getRequest('sendDataToElq', '/~john/eoy-lp/PHP/ajaxCall.php', postData, 'text', 'application/x-www-form-urlencoded');
+    getRequest('sendDataToElq', 'http://209.177.156.227/eoy-campaign/PHP/ajaxCall.php', postData, 'text', 'application/x-www-form-urlencoded');
     return false;
 }
 
 function sendDataToElqResult(success) {
     if (success == '') {
         //Hide form and display thank you div below the form
-        document.forms['eoyForm'].style.display = 'none';
-        document.getElementById('thankYouDiv').style.display = '';
+        document.forms['EOYCampaign'].className = 'hide';
+        document.getElementById('thankYouDiv').className = 'm-thanks';
     } else {
         alert("Error submitting form. Please try again");
     }
