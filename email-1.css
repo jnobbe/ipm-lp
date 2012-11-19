@@ -140,14 +140,14 @@ small {
   width: 100%; }
 
 .m-main-header {
-  background: url("images/mobile-header.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/mobile-header.png") no-repeat;
   background-position: center center;
   background-size: 268px 45px;
   height: 45px;
   width: 100%; }
 
 .our-story {
-  background: url("images/our-story.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/our-story.png") no-repeat;
   background-position: left center;
   background-size: contain;
   height: 59px;
@@ -178,7 +178,7 @@ small {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.25em;
-  background: url("images/busts.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/busts.png") no-repeat;
   background-position: center center;
   background-size: contain;
   width: 100%; }
@@ -206,21 +206,21 @@ small {
   line-height: 1.42857em; }
 
 .digital-production:before {
-  background: url("images/www-icon.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/www-icon.png") no-repeat;
   background-position: center center;
   content: "";
   height: 28px;
   width: 30px; }
 
 .nurturing-tracks:before {
-  background: url("images/mail-icon.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/mail-icon.png") no-repeat;
   background-position: center center;
   content: "";
   height: 23px;
   width: 34px; }
 
 .mobile-demand-generation:before {
-  background: url("images/calculator-icon.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/calculator-icon.png") no-repeat;
   background-position: center center;
   content: "";
   height: 29px;
@@ -229,21 +229,21 @@ small {
   left: -35px; }
 
 .full-system-auditing:before {
-  background: url("images/magnifying-glass-icon.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/magnifying-glass-icon.png") no-repeat;
   background-position: center center;
   content: "";
   height: 30px;
   width: 31px; }
 
 .creative-and-dev:before {
-  background: url("images/pen-icon.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/pen-icon.png") no-repeat;
   background-position: center center;
   content: "";
   height: 31px;
   width: 32px; }
 
 .target-personas:before {
-  background: url("images/persona-icon.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/persona-icon.png") no-repeat;
   background-position: center center;
   content: "";
   height: 29px;
@@ -261,42 +261,42 @@ small {
     padding-right: 0; }
 
 .seagate {
-  background: url("images/seagate.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/seagate.png") no-repeat;
   background-position: center center;
   background-size: contain;
   height: 35px;
   width: 64px; }
 
 .fluke {
-  background: url("images/fluke.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/fluke.png") no-repeat;
   background-position: center center;
   background-size: contain;
   height: 35px;
   width: 64px; }
 
 .ipass {
-  background: url("images/ipass.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/ipass.png") no-repeat;
   background-position: center center;
   background-size: contain;
   height: 35px;
   width: 26px; }
 
 .nimbus {
-  background: url("images/nimbus.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/nimbus.png") no-repeat;
   background-position: center center;
   background-size: contain;
   height: 35px;
   width: 44px; }
 
 .fortrust {
-  background: url("images/fortrust.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/fortrust.png") no-repeat;
   background-position: center center;
   background-size: contain;
   height: 35px;
   width: 85px; }
 
 .webtrends {
-  background: url("images/webtrends.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/webtrends.png") no-repeat;
   background-position: center center;
   background-size: contain;
   height: 35px;
@@ -322,7 +322,7 @@ small {
 
 .twitter {
   display: inline-block;
-  background: url("images/twitter.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/twitter.png") no-repeat;
   background-position: center center;
   background-size: contain;
   height: 25px;
@@ -330,7 +330,7 @@ small {
 
 .facebook {
   display: inline-block;
-  background: url("images/facebook.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/facebook.png") no-repeat;
   background-position: center center;
   background-size: contain;
   height: 25px;
@@ -338,7 +338,7 @@ small {
 
 .google {
   display: inline-block;
-  background: url("images/google.png") no-repeat;
+  background: url("http://209.177.156.227/eoy-campaign/images/google.png") no-repeat;
   background-position: center center;
   background-size: contain;
   height: 25px;
@@ -349,7 +349,7 @@ body {
   background: #eaeff2; }
 
 .l-header {
-  background: url(images/hero-1.jpg) no-repeat #95afb5;
+  background: url(http://209.177.156.227/eoy-campaign/images/hero-1.jpg) no-repeat #95afb5;
   border-top: 1px solid #463e3f;
   background-position: bottom center;
   background-size: 100%;
@@ -369,7 +369,7 @@ body {
   border-top: 1px solid #463e3f; }
 
 .m-logo-bar {
-  background: url("images/ipm-logo.png") no-repeat #95afb5;
+  background: url("http://209.177.156.227/eoy-campaign/images/ipm-logo.png") no-repeat #95afb5;
   background-position: center center; }
 
 .input-text:focus {
@@ -432,11 +432,11 @@ body {
     height: 60px; }
 
   .m-section-hero {
-    -webkit-transition: height ease-in-out, 1s;
+    -webkit-transition: height ease-in, 1s;
     -webkit-transition-delay: 0.25s, 0s;
-    -moz-transition: height ease-in-out 0.25s, 1s;
-    -o-transition: height ease-in-out 0.25s, 1s;
-    transition: height ease-in-out 0.25s, 1s; } }
+    -moz-transition: height ease-in 0.25s, 1s;
+    -o-transition: height ease-in 0.25s, 1s;
+    transition: height ease-in 0.25s, 1s; } }
 @media (min-width: 79em) {
   .l-wrapper {
     max-width: 119em; }
@@ -481,13 +481,13 @@ body {
     z-index: 0; }
 
   .red-ribbon {
-    background: url("images/red-ribbon.png") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/red-ribbon.png") no-repeat;
     background-size: 130px 202px;
     height: 202px;
     width: 130px; }
 
   .purple-ribbon {
-    background: url("images/purple-ribbon.png") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/purple-ribbon.png") no-repeat;
     background-size: 130px 204px;
     height: 204px;
     width: 130px; }
@@ -503,7 +503,7 @@ body {
     z-index: 1; }
 
   .m-mobile-optimized {
-    background: url("images/mobile-optimized.png") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/mobile-optimized.png") no-repeat;
     background-position: center center;
     background-size: contain;
     height: 68px;
@@ -515,7 +515,7 @@ body {
     z-index: 1; }
 
   .m-main-header {
-    background: url("images/desktop-header.png") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/desktop-header.png") no-repeat;
     background-position: left center;
     background-size: contain;
     display: inline-block;
@@ -533,7 +533,8 @@ body {
     width: 17.72152%;
     float: left;
     margin-right: 1.26582%;
-    margin-right: 31.64557%; }
+    margin-left: 6.32911%;
+    margin-right: 25.31646%; }
 
   .m-main-subhead {
     font-size: 1.5em;
@@ -548,13 +549,16 @@ body {
 
   .m-section-hero {
     background-position: left center;
-    height: 120px; }
+    height: 120px;
+    max-width: 600px; }
 
   .m-services-list {
-    width: 55.6962%;
+    width: 49.36709%;
     float: left;
     margin-right: 1.26582%;
     margin-left: 31.64557%;
+    margin-right: 18.98734%;
+    min-width: 800px;
     padding: 0; }
 
   .m-services-list-item {
@@ -562,12 +566,12 @@ body {
     padding-top: 0em;
     padding-bottom: 0em;
     margin-bottom: 1.25em;
-    width: 20.45455%;
+    width: 23.07692%;
     float: left;
-    margin-right: 2.27273%;
+    margin-right: 2.5641%;
     float: left;
-    padding-right: 2em;
-    min-height: 250px; }
+    min-height: 250px;
+    min-width: 200px; }
     .m-services-list-item:before {
       display: inline-block;
       margin-top: 0;
@@ -576,21 +580,21 @@ body {
       left: 0; }
 
   .digital-production:before {
-    background: url("images/www-icon-desktop.png") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/www-icon-desktop.png") no-repeat;
     background-position: center center;
     content: "";
     height: 175px;
     width: 186px; }
 
   .nurturing-tracks:before {
-    background: url("images/map-desktop.gif") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/map-desktop.gif") no-repeat;
     background-position: center center;
     content: "";
     height: 175px;
     width: 196px; }
 
   .mobile-demand-generation:before {
-    background: url("images/mobile-desktop.png") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/mobile-desktop.png") no-repeat;
     background-position: center center;
     content: "";
     height: 175px;
@@ -599,21 +603,21 @@ body {
     left: 0; }
 
   .full-system-auditing:before {
-    background: url("images/system-auditing-desktop.png") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/system-auditing-desktop.png") no-repeat;
     background-position: center center;
     content: "";
     height: 175px;
     width: 117px; }
 
   .creative-and-dev:before {
-    background: url("images/responsive-desktop.png") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/responsive-desktop.png") no-repeat;
     background-position: center center;
     content: "";
     height: 175px;
     width: 197px; }
 
   .target-personas:before {
-    background: url("images/persona-icon-desktop.png") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/persona-icon-desktop.png") no-repeat;
     background-position: center center;
     content: "";
     height: 175px;
@@ -621,7 +625,7 @@ body {
 
   .m-headline-image,
   .m-section-hero {
-    width: 68.35443%;
+    width: 43.03797%;
     float: left;
     margin-right: 1.26582%;
     margin-left: 31.64557%; }
@@ -629,14 +633,16 @@ body {
   .m-subhead,
   .m-section-copy,
   .m-client-logo {
-    width: 30.37975%;
+    width: 43.03797%;
     float: left;
     margin-right: 1.26582%;
     margin-left: 31.64557%;
-    margin-right: 37.97468%; }
+    margin-right: 25.31646%;
+    max-width: 600px; }
 
   .m-client-logo {
-    text-align: left; }
+    text-align: left;
+    min-width: 575px; }
 
   .seagate,
   .fluke,
@@ -665,8 +671,8 @@ body {
     width: 92px; }
 
   .m-footer-copy {
-    width: 49.36709%;
+    width: 62.02532%;
     float: left;
     margin-right: 1.26582%;
     margin-left: 18.98734%;
-    margin-right: 31.64557%; } }
+    margin-right: 18.98734%; } }

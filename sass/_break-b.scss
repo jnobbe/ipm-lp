@@ -56,14 +56,14 @@ $container-style: magic;
 // --------------------------------------------------------------------------
 
 .red-ribbon {
-    background: url("images/red-ribbon.png") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/red-ribbon.png") no-repeat;
     background-size: 130px 202px;
     height: 202px;
     width: 130px;
 }
 
 .purple-ribbon {
-    background: url("images/purple-ribbon.png") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/purple-ribbon.png") no-repeat;
     background-size: 130px 204px;
     height: 204px;
     width: 130px;
@@ -86,7 +86,7 @@ $container-style: magic;
 // --------------------------------------------------------------------------
 
 .m-mobile-optimized {
-    @include icon("", "images/mobile-optimized.png", 68px, 157px, center, center);
+    @include icon("", "http://209.177.156.227/eoy-campaign/images/mobile-optimized.png", 68px, 157px, center, center);
     display: block;
     float: right;
     margin-bottom: -68px;
@@ -95,7 +95,7 @@ $container-style: magic;
 }
 
 .m-main-header {
-    background: url("images/desktop-header.png") no-repeat;
+    background: url("http://209.177.156.227/eoy-campaign/images/desktop-header.png") no-repeat;
     background-position: left center;
     background-size: contain;
     display: inline-block;
@@ -110,7 +110,8 @@ $container-style: magic;
 .m-main-subhead,
 .m-form {
     @include span-columns(3, $break-b);
-    @include post(5);
+    @include pre(1);
+    @include post(4);
 }
 
 .m-main-subhead {
@@ -126,20 +127,25 @@ $container-style: magic;
 .m-section-hero {
     background-position: left center;
     height: 120px;
+    max-width: 600px;
 }
 
 .m-services-list {
-    @include span-columns(9, $break-b);
+    @include span-columns(8, $break-b);
     @include pre(5);
+    @include post(3);
+    min-width: 800px;
     padding: 0;
 }
 
 .m-services-list-item {
+    // @include box-sizing(border-box);
     @include rhythm($trailer: 1);
-    @include span-columns(2, 9);
+    @include span-columns(2, 8);
     float: left;
-    padding-right: 2em;
+    // padding-right: 2em;
     min-height: 250px;
+    min-width: 200px;
     &:before {
         display: inline-block;
         margin-top: 0;
@@ -149,33 +155,37 @@ $container-style: magic;
     }
 }
 
-    .digital-production { @include icon(before, "images/www-icon-desktop.png", 175px, 186px, center, center); }
-    .nurturing-tracks { @include icon(before, "images/map-desktop.gif", 175px, 196px, center, center); }
+    .digital-production { @include icon(before, "http://209.177.156.227/eoy-campaign/images/www-icon-desktop.png", 175px, 186px, center, center); }
+    .nurturing-tracks { @include icon(before, "http://209.177.156.227/eoy-campaign/images/map-desktop.gif", 175px, 196px, center, center); }
     .mobile-demand-generation {
-        @include icon(before, "images/mobile-desktop.png", 175px, 144px, center, center);
+        @include icon(before, "http://209.177.156.227/eoy-campaign/images/mobile-desktop.png", 175px, 144px, center, center);
         &:before {
             left: 0;
         }
     }
-    .full-system-auditing { @include icon(before, "images/system-auditing-desktop.png", 175px, 117px, center, center); }
-    .creative-and-dev { @include icon(before, "images/responsive-desktop.png", 175px, 197px, center, center); }
-    .target-personas { @include icon(before, "images/persona-icon-desktop.png", 175px, 164px, center, center); }
+    .full-system-auditing { @include icon(before, "http://209.177.156.227/eoy-campaign/images/system-auditing-desktop.png", 175px, 117px, center, center); }
+    .creative-and-dev { @include icon(before, "http://209.177.156.227/eoy-campaign/images/responsive-desktop.png", 175px, 197px, center, center); }
+    .target-personas { @include icon(before, "http://209.177.156.227/eoy-campaign/images/persona-icon-desktop.png", 175px, 164px, center, center); }
 
 .m-headline-image,
 .m-section-hero {
-    @include span-columns(11);
+    @include span-columns(7);
     @include pre(5);
 }
 
 .m-subhead,
 .m-section-copy,
 .m-client-logo {
-    @include span-columns(5);
+    @include span-columns(7);
     @include pre(5);
-    @include post(6);
+    @include post(4);
+    max-width: 600px;
 }
 
-.m-client-logo { text-align: left; }
+.m-client-logo {
+    text-align: left;
+    min-width: 575px;
+}
     .seagate,
     .fluke,
     .ipass,
@@ -190,9 +200,9 @@ $container-style: magic;
     .webtrends { width: 92px; }
 
 .m-footer-copy {
-    @include span-columns(8);
+    @include span-columns(10);
     @include pre(3);
-    @include post(5);
+    @include post(3);
 }
 
 }
