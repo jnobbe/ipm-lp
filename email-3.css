@@ -161,10 +161,10 @@ small {
   font-weight: 700; }
 
 .m-thanks {
-  font-size: 1.5em;
-  line-height: 1.25em;
-  font-weight: 700;
-  text-align: center;
+  font-size: 1.875em;
+  line-height: 1em;
+  font-weight: 400;
+  text-align: left;
   width: 100%;
   -webkit-transition: all 0.25s ease-in;
   -webkit-transition-delay: 0;
@@ -445,14 +445,7 @@ body {
     width: 100%; }
 
   .m-section-hero {
-    height: 60px; }
-
-  .m-section-hero {
-    -webkit-transition: all 1s linear;
-    -webkit-transition-delay: 0.5s;
-    -moz-transition: all 1s linear 0.5s;
-    -o-transition: all 1s linear 0.5s;
-    transition: all 1s linear 0.5s; } }
+    height: 60px; } }
 @media (min-width: 79em) {
   .l-wrapper {
     max-width: 119em; }
@@ -515,7 +508,7 @@ body {
     float: none;
     margin-left: 18.98734%;
     position: relative;
-    top: -2em;
+    top: -4em;
     z-index: 1; }
 
   .m-mobile-optimized {
@@ -623,7 +616,7 @@ body {
     background-position: center center;
     content: "";
     height: 175px;
-    width: 117px; }
+    width: 200px; }
 
   .creative-and-dev:before {
     background: url("http://209.177.156.227/eoy-campaign/images/responsive-desktop.png") no-repeat;
@@ -658,7 +651,11 @@ body {
 
   .m-client-logo {
     text-align: left;
-    min-width: 575px; }
+    min-width: 575px;
+    margin-top: 1.25em;
+    padding-top: 0em;
+    padding-bottom: 1.25em;
+    margin-bottom: 0em; }
 
   .seagate,
   .fluke,

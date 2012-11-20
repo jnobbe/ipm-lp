@@ -38,7 +38,7 @@ $container-style: magic;
 
 .l-section-one { margin-top: -201px; }
 
-.l-section-two {margin-top: -204px; }
+.l-section-two { margin-top: -204px; }
 
 .l-wrapper,
 .l-header,
@@ -76,7 +76,7 @@ $container-style: magic;
     float: none;
     @include pre(3);
     position: relative;
-    top: -2em;
+    top: -4em;
     z-index: 1;
 }
 
@@ -163,7 +163,7 @@ $container-style: magic;
             left: 0;
         }
     }
-    .full-system-auditing { @include icon(before, "http://209.177.156.227/eoy-campaign/images/system-auditing-desktop.png", 175px, 117px, center, center); }
+    .full-system-auditing { @include icon(before, "http://209.177.156.227/eoy-campaign/images/system-auditing-desktop.png", 175px, 200px, center, center); }
     .creative-and-dev { @include icon(before, "http://209.177.156.227/eoy-campaign/images/responsive-desktop.png", 175px, 197px, center, center); }
     .target-personas { @include icon(before, "http://209.177.156.227/eoy-campaign/images/persona-icon-desktop.png", 175px, 164px, center, center); }
 
@@ -185,6 +185,7 @@ $container-style: magic;
 .m-client-logo {
     text-align: left;
     min-width: 575px;
+    @include rhythm($leader: 1, $padding-trailer: 1);
 }
     .seagate,
     .fluke,

@@ -232,9 +232,9 @@ small {
 .m-subhead { font-weight: 700; }
 
 .m-thanks {
-    @include adjust-font-size-to(24px, 1.5);
-    font-weight: 700;
-    text-align: center;
+    @include adjust-font-size-to(30px, 1.5);
+    font-weight: 400;
+    text-align: left;
     width: 100%;
     @include single-transition(all, .25s, ease-in, 0);
 }

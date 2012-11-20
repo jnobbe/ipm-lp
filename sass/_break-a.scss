@@ -50,12 +50,4 @@ $container-style: static;
 
 .m-section-hero { height: 60px; }
 
-// --------------------------------------------------------------------------
-// Transition
-// --------------------------------------------------------------------------
-
-.m-section-hero {
-    @include single-transition(all, 1s, linear, .5s);
-}
-
 }
